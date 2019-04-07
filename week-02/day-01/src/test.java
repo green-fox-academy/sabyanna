@@ -1,5 +1,6 @@
 import java.lang.reflect.Array;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class test {
 
@@ -152,6 +153,12 @@ public class test {
 
         int whereIs50 = Arrays.binarySearch(numToSort, 50);
         System.out.println(whereIs50);
+
+
+
+
+
+
 
 
 
