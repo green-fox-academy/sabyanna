@@ -2,34 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c794beff-e726-4425-bcb8-6bc2e5c2df2b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppendAFunc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ChangeElements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CompareLength.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DiagonalMatrix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Doubling.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Factorio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Greet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IncrementElement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PrintAll.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SumElements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Third.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day-01.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/day-01/META-INF/day-01.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/day-01/MethodClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/day-01/MethodsTest1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/day-01/test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/MethodClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/MethodRandom.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/MethodsTest1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Colors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DoubleEltems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,28 +19,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppendAFunc.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
-              <folding>
-                <element signature="e#477#478#0" expanded="true" />
-                <element signature="e#509#510#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Sum.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="5" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="16" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Factorio.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -129,11 +82,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DiagonalMatrix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+            <state relative-caret-position="255">
+              <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DoubleEltems.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="10" column="57" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Colors.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -165,11 +136,13 @@
         <option value="$PROJECT_DIR$/src/IncrementElement.java" />
         <option value="$PROJECT_DIR$/src/PrintAll.java" />
         <option value="$PROJECT_DIR$/src/DiagonalMatrix.java" />
+        <option value="$PROJECT_DIR$/src/DoubleEltems.java" />
+        <option value="$PROJECT_DIR$/src/Colors.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="745" />
   </component>
@@ -221,9 +194,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DiagonalMatrix">
-    <configuration name="ChangeElements" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ChangeElements" />
+  <component name="RunManager" selected="Application.AppendA">
+    <configuration name="AppendA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AppendA" />
+      <module name="workshop" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Colors" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Colors" />
       <module name="workshop" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -236,8 +216,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IncrementElement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="IncrementElement" />
+    <configuration name="DoubleEltems" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DoubleEltems" />
       <module name="workshop" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -250,20 +230,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SumElements" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SumElements" />
-      <module name="workshop" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AppendA" />
+        <item itemvalue="Application.Colors" />
+        <item itemvalue="Application.DoubleEltems" />
         <item itemvalue="Application.DiagonalMatrix" />
         <item itemvalue="Application.PrintAll" />
-        <item itemvalue="Application.IncrementElement" />
-        <item itemvalue="Application.ChangeElements" />
-        <item itemvalue="Application.SumElements" />
       </list>
     </recent_temporary>
   </component>
@@ -277,15 +250,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554716253370</updated>
-      <workItem from="1554716258053" duration="3094000" />
+      <workItem from="1554716258053" duration="4213000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3094000" />
+    <option name="totallyTimeSpent" value="4213000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="697" height="745" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
@@ -293,7 +266,7 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.08006279" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14145234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" weight="0.32850242" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
@@ -303,7 +276,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33333334" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32850242" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -406,8 +379,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DiagonalMatrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        <state relative-caret-position="255">
+          <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DoubleEltems.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="57" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Colors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
         </state>
       </provider>
     </entry>
