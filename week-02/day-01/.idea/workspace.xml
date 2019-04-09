@@ -2,21 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7aa699a1-551e-4399-86fa-ca3adbcc1020" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/day-01.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/day-01/META-INF/day-01.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/day-01/MethodClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/day-01/MethodsTest1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/day-01/test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MethodClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MethodRandom.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MethodsTest1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day-02/workshop/src/Reverse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day-02/workshop/src/SimpleReplace.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day-02/workshop/src/TakesLonger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day-02/workshop/src/TodoPrint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day-02/workshop/src/UrlFixer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workshop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/workshop/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,7 +23,7 @@
     <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -67,19 +60,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Arrays" type="b2602c69:ProjectViewProjectNode" />
-              <item name="day-01" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -87,7 +70,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../greenfox-gyak/1. week/mrw01d04" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/workshop" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -144,11 +127,12 @@
       <updated>1554462051018</updated>
       <workItem from="1554462055941" duration="23358000" />
       <workItem from="1554715344652" duration="834000" />
+      <workItem from="1554806583204" duration="43000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24192000" />
+    <option name="totallyTimeSpent" value="24235000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -158,7 +142,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.16111952" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.1633888" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" />
@@ -195,36 +179,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2618">
-          <caret line="156" selection-start-line="156" selection-end-line="156" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MethodsTest1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MethodClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="5" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MethodRandom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test.java" />
+    <entry file="file://$PROJECT_DIR$/src/MethodsTest1.java" />
+    <entry file="file://$PROJECT_DIR$/src/MethodClass.java" />
+    <entry file="file://$PROJECT_DIR$/src/MethodRandom.java" />
   </component>
 </project>
