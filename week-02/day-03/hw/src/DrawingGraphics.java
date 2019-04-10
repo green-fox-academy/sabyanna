@@ -12,7 +12,7 @@ public class DrawingGraphics  extends JPanel {
 
             this.setBackground(Color.WHITE);
 
-            g.setColor(Color.BLUE);  //all caps means all caps in java
+            g.setColor(Color.BLUE);  //all caps means sth in java
 
             //drawing solid rectangle, balfent 0,0 - x, y, width, height
             g.fillRect(25, 25, 100, 30);
