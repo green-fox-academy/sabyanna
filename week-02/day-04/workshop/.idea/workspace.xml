@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6349b893-6128-419b-a652-3292784ac48c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Fibonacci.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MaxFinder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/workshop/Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/workshop/Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/workshop/String3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/workshop/String3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/workshop/Strings.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/workshop/Strings.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Builder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Builder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/String3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/String3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MaxFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MaxFinder.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -111,8 +104,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MaxFinder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+            <state relative-caret-position="238">
+              <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -148,10 +141,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="754" />
+    <option name="x" value="26" />
+    <option name="y" value="221" />
+    <option name="width" value="697" />
+    <option name="height" value="745" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -203,7 +196,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Strings">
+  <component name="RunManager" selected="Application.MaxFinder">
     <configuration name="Builder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Builder" />
       <module name="workshop" />
@@ -218,8 +211,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="String2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="String2" />
+    <configuration name="MaxFinder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MaxFinder" />
       <module name="workshop" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -241,11 +234,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MaxFinder" />
         <item itemvalue="Application.Strings" />
         <item itemvalue="Application.Fibonacci" />
         <item itemvalue="Application.String3" />
         <item itemvalue="Application.Builder" />
-        <item itemvalue="Application.String2" />
       </list>
     </recent_temporary>
   </component>
@@ -259,12 +252,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554969688325</updated>
-      <workItem from="1554969691929" duration="17330000" />
+      <workItem from="1554969691929" duration="20089000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17330000" />
+    <option name="totallyTimeSpent" value="20089000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -275,7 +268,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.16910689" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.16910689" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" weight="0.32970452" />
@@ -284,8 +277,8 @@
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.31726283" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.3993559" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.31726283" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.3732504" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3281493" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
@@ -313,6 +306,14 @@
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/MaxFinder.java</url>
+          <line>13</line>
+          <properties class="MaxFinder" method="largest">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -335,13 +336,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SumDigit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -373,13 +367,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/String3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="34" lean-forward="true" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/String2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -397,10 +384,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/SumDigit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/String3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="34" lean-forward="true" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/MaxFinder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        <state relative-caret-position="238">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
         </state>
       </provider>
     </entry>
