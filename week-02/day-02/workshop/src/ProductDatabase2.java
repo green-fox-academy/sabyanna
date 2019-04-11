@@ -17,14 +17,36 @@ public class ProductDatabase2 {
 
         Iterator sIt = shopList.entrySet().iterator();
 
+        System.out.println("Product under 201: ");
         while (sIt.hasNext()) {
 
             Map.Entry mapElement = (Map.Entry)sIt.next();
             if (((int)(mapElement.getValue() )< 201)){
-                System.out.println(mapElement.getKey() + " is under 201.");
+                System.out.print(mapElement.getKey() + ", ");
             }
 
         }
+
+
+        System.out.println("");
+        System.out.println("");
+
+        System.out.println("Products above 150: ");
+
+        Iterator sIt2 = shopList.entrySet().iterator();
+
+        while (sIt2.hasNext()) {
+
+            Map.Entry mapElement = (Map.Entry)sIt2.next();
+            if (((int)(mapElement.getValue() ) > 150)){
+                System.out.println(mapElement.getKey() + ":" + mapElement.getValue());
+            }
+
+        }
+
+
+
+
 
 
 

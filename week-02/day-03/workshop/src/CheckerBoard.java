@@ -14,22 +14,16 @@ public class CheckerBoard {
         for (int i = 0; i < 8; i++) {
 
             if (i % 2 != 0) {
-                for (int j = 0; j < 8; j++) {
+                for (int j = 0; j < 4; j++) {
                     drawRectB((j * 80), i * 40, 40, g);
                 }
             } else {
-                for (int j = 0; j < 8; j++) {
+                for (int j = 0; j < 4; j++) {
                     drawRectB(40 + (j * 80), i * 40, 40, g);
                 }
             }
 
-
         }
-
-
-
-
-
 
     }
 
