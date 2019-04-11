@@ -6,13 +6,9 @@ public class Strings {
 
         System.out.println(replace("xxxxx", 0));
 
-
-
     }
-
         //Given a string, compute recursively (no loops) a new string where all
         // the lowercase 'x' chars have been changed to 'y' chars.
-
 
     public static String replace(String a, int i) {
         char[] atodo = a.toCharArray();

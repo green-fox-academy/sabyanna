@@ -4,13 +4,16 @@ import java.awt.*;
 
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
-public class DrawingSquares {
+public class NewDrawing {
 
 
 
     private static final double third = 0.3333;
     private static final double kh = 0.6666;
-    private static final double MINIMUM = 1;
+    private static final int MINIMUM = 1;
+    private static final double D = 1.333333;
+
+
 
 
     public static void mainDraw(Graphics g) {
@@ -19,14 +22,15 @@ public class DrawingSquares {
 
         setBackGround(g);
 
-        double x = WIDTH * third;
-        double y = WIDTH * kh;
+        int x1 = (int)(WIDTH * third);
+        int y1 = (int)(WIDTH * third);
+        int x2 = (int)(WIDTH * third);
+        int y2 = (int)(WIDTH * third);
+        g.setColor(Color.BLACK);
+        int width = 640;
 
-        drawLines(g, (int)(WIDTH*third), 0, (int)(WIDTH*third), WIDTH);
 
-
-
-
+        drawLines(g, x1, y1, x2, y2, 640);
 
     }
 
@@ -35,20 +39,24 @@ public class DrawingSquares {
         a.fillRect(0, 0, WIDTH, WIDTH);
     }
 
-    private static void drawLines(Graphics g, int x1, int y1, int x2, int y2) {
-        g.setColor(Color.BLACK);
-        g.drawLine((int)(WIDTH*third), 0, (int)(WIDTH*third), WIDTH);
+    private static void drawLines(Graphics g, int x1, int y1, int x2, int y2, int width) {
 
-        g.drawLine((int)(WIDTH*kh), 0, (int)(WIDTH*kh), WIDTH);
+        g.drawLine(x1, 0, x2, width);
+        g.drawLine(x1 *2, 0, x2*2, width );
+        g.drawLine(0, y1, width, y2);
+        g.drawLine(0, 2*y1, width, 2*y2);
+        //g.drawLine((int)(WIDTH*kh), 0, (int)(WIDTH*kh), WIDTH);
+        if(y2 > 1) {
+            g.translate((int)(width * third), 0);
+            drawLines(g, (int)(x1*third), (int)(y1* third), (int)(x2 * third), (int)(y2* third), (int)(width *third));
 
-        g.drawLine(0, (int)(WIDTH*third), WIDTH, (int)(WIDTH*third));
-
-        g.drawLine(0, (int)(WIDTH*kh), WIDTH, (int)(WIDTH*kh));
-        if((x1 - x2 > MINIMUM) && (y1 - y2 > MINIMUM)) {
-            g.translate((int)(WIDTH*third), 0);
-            drawLines(g, (int)(x1*third), (int)(y1*third), (int)(x2*third), (int)(y2));
-
+            g.translate(0, (int)(width * third));
+            drawLines(g, (int)(x1*third), (int)(y1* third), (int)(x2 * third), (int)(y2* third), (int)(width *third));
         }
+
+
+
+
     }
 /*
     public static void drawLines(Graphics a) {

@@ -4,29 +4,32 @@ import java.awt.*;
 
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
-public class DrawingSquares {
+public class Drawing {
 
 
 
     private static final double third = 0.3333;
     private static final double kh = 0.6666;
-    private static final double MINIMUM = 1;
+    private static final int MINIMUM = 1;
+    private static final double D = 1.333333;
+
+
 
 
     public static void mainDraw(Graphics g) {
         // Draw the canvas' diagonals.
         // If it starts from the upper-left corner it should be green, otherwise it should be red.
 
-        setBackGround(g);
+        //setBackGround(g);
 
-        double x = WIDTH * third;
-        double y = WIDTH * kh;
+        int x1 = (int)(WIDTH * third);
+        int y1 = (int)(WIDTH * third);
+        int x2 = (int)(WIDTH * third);
+        int y2 = (int)(WIDTH * third);
+        g.setColor(Color.BLACK);
 
-        drawLines(g, (int)(WIDTH*third), 0, (int)(WIDTH*third), WIDTH);
 
-
-
-
+        drawLines(g, x1, y1, x2, y2);
 
     }
 
@@ -36,17 +39,11 @@ public class DrawingSquares {
     }
 
     private static void drawLines(Graphics g, int x1, int y1, int x2, int y2) {
-        g.setColor(Color.BLACK);
-        g.drawLine((int)(WIDTH*third), 0, (int)(WIDTH*third), WIDTH);
 
-        g.drawLine((int)(WIDTH*kh), 0, (int)(WIDTH*kh), WIDTH);
+        g.drawLine(x1, 0, x2, y2 *3);
+        if(y2 > 2) {
 
-        g.drawLine(0, (int)(WIDTH*third), WIDTH, (int)(WIDTH*third));
-
-        g.drawLine(0, (int)(WIDTH*kh), WIDTH, (int)(WIDTH*kh));
-        if((x1 - x2 > MINIMUM) && (y1 - y2 > MINIMUM)) {
-            g.translate((int)(WIDTH*third), 0);
-            drawLines(g, (int)(x1*third), (int)(y1*third), (int)(x2*third), (int)(y2));
+            drawLines(g, (int)(x1*D), y1 *0, (int)(x2 * D), (int)(y2* third));
 
         }
     }
