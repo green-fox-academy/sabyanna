@@ -5,7 +5,17 @@ public class String3 {
     public static void main(String[] args) {
 
         //Given a string, compute recursively a new string where all the adjacent chars are now separated by a *
+        System.out.println(stars("varangy", 1));
 
+    }
+    public static String stars(String a, int i) {
+        StringBuilder sbf = new StringBuilder(a);
+        if (i == sbf.length()) {
+            return sbf.toString();
+        } else {
+            String result = sbf.substring(0,i) + "*" + sbf.substring(i, sbf.length());
+            return stars(result, i+2);
+        }
     }
 
     /*

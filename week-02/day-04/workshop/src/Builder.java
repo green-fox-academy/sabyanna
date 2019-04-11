@@ -1,8 +1,10 @@
 public class Builder {
     public static void main(String[] args) {
-        StringBuffer sbf = new StringBuffer("Navin");
-        sbf.append("kecske");
-        System.out.println(sbf);
+        int i = 1;
+        StringBuilder sbf = new StringBuilder("kecske");
+        String result = sbf.substring(0,i) + "*" + sbf.substring(i, sbf.length());
+        System.out.println(result);
+        }
 
     }
-}
+
