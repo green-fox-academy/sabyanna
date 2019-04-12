@@ -4,7 +4,7 @@ import java.awt.*;
 
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
-public class Quarters {
+public class EnvelopeStar {
     public static void mainDraw(Graphics g) {
         // Create a line drawing function that takes 3 parameters:
         // The x and y coordinates of the line's starting point and the graphics
@@ -17,9 +17,25 @@ public class Quarters {
         int fel = WIDTH / 2;
 
 
-        
 
-        int tener = 30;
+
+        int tener = 32;
+
+        for (int i = 0; i <= fel; i+=tener) {
+            drawlineGreen(g, i, fel, fel, fel-i);
+        }
+
+        for (int i = 0; i <= fel; i+=tener) {
+            drawlineGreen(g, fel, i, fel + i, fel);
+        }
+
+        for (int i = 0; i < fel; i+=tener) {
+            drawlineGreen(g, i, fel, fel, fel + i);
+        }
+
+        for (int i = 0; i < fel; i+=tener) {
+            drawlineGreen(g, fel +i, fel, fel, WIDTH -i);
+        }
 
         /*
         for (int i = 0; i < fel; i+=tener) {

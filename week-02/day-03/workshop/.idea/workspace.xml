@@ -2,29 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7afa769-9cd7-4638-b13c-49d40ee7dd1b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../day-04/workshop/src/EXTRADrawing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../day-05/workshop/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../day-05/workshop/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../day-05/workshop/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../day-05/workshop/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../day-05/workshop/src/LinePlay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../day-05/workshop/src/Quarters.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../day-05/workshop/workshop.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day-05/workshop/src/Triangles.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/workshop/CheckerBoard$ImagePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/workshop/CheckerBoard$ImagePanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/workshop/CheckerBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/workshop/CheckerBoard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CheckerBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CheckerBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day-04/workshop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../day-04/workshop/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day-04/workshop/out/production/workshop/DrawingSquares$ImagePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../day-04/workshop/out/production/workshop/DrawingSquares$ImagePanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day-04/workshop/out/production/workshop/DrawingSquares.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../day-04/workshop/out/production/workshop/DrawingSquares.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day-04/workshop/out/production/workshop/MaxFinder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../day-04/workshop/out/production/workshop/MaxFinder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day-04/workshop/out/production/workshop/NewDrawing$ImagePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../day-04/workshop/out/production/workshop/NewDrawing$ImagePanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day-04/workshop/out/production/workshop/NewDrawing.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../day-04/workshop/out/production/workshop/NewDrawing.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day-04/workshop/out/production/workshop/String3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../day-04/workshop/out/production/workshop/String3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day-04/workshop/src/DrawingSquares.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../day-04/workshop/src/DrawingSquares.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day-04/workshop/src/MaxFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../day-04/workshop/src/MaxFinder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day-04/workshop/src/NewDrawing.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../day-04/workshop/src/NewDrawing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day-04/workshop/src/String3.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../day-04/workshop/src/String3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day-05/workshop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../day-05/workshop/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day-05/workshop/src/EnvelopeStar.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../day-05/workshop/src/EnvelopeStar.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
