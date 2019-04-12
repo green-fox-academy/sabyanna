@@ -4,14 +4,14 @@ import java.awt.*;
 
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
-public class NewDrawing {
+public class EXTRADrawing {
 
 
 
     private static final double third = 0.3333;
     private static final double kh = 0.6666;
     private static final int MINIMUM = 1;
-    private static final double D = 1.333333;
+    private static final double MAGIC = 4/3;
 
 
 
@@ -30,11 +30,7 @@ public class NewDrawing {
         int width = 640;
 
 
-        drawLines(g, x1, y1, x2, y2, 640);
-        g.translate(-315
-                , 0);
-        //g.setColor(Color.blue);
-        //drawLines2(g, x1, y1, x2, y2, 640);
+        drawLines(g, x1, y1, x2, y2, 640, MAGIC);
 
     }
 
@@ -43,7 +39,7 @@ public class NewDrawing {
         a.fillRect(0, 0, WIDTH, WIDTH);
     }
 
-    private static void drawLines(Graphics g, int x1, int y1, int x2, int y2, int width) {
+    private static void drawLines(Graphics g, int x1, int y1, int x2, int y2, int width, double magic) {
 
         g.drawLine(x1, 0, x2, width);
         g.drawLine(x1 *2, 0, x2*2, width );
@@ -51,27 +47,7 @@ public class NewDrawing {
         g.drawLine(0, 2*y1, width, 2*y2);
 
         if(y2 > 1) {
-
-            g.translate((int)(width * third), 0);
-            drawLines(g, (int)(x1*third), (int)(y1* third), (int)(x2 * third), (int)(y2* third), (int)(width *third));
-            //g.translate(0, (int)(width * third));
-            //drawLines(g, (int)(x1*third), (int)(y1* third), (int)(x2 * third), (int)(y2* third), (int)(width *third));
-        }
-
-    }
-
-
-
-    private static void drawLines2(Graphics g, int x1, int y1, int x2, int y2, int width) {
-
-        g.drawLine(x1, 0, x2, width);
-        g.drawLine(x1 *2, 0, x2*2, width );
-        g.drawLine(0, y1, width, y2);
-        g.drawLine(0, 2*y1, width, 2*y2);
-
-        if(y2 > 1) {
-            g.translate(0, (int)(width * third));
-            drawLines2(g, (int)(x1*third), (int)(y1* third), (int)(x2 * third), (int)(y2* third), (int)(width *third));
+            drawLines(g, (int)(x1*third*magic), (int)(y1* third), (int)(x2 * third), (int)(y2* third), (int)(width *third), magic * third);
 
         }
 

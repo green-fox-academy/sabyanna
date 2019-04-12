@@ -26,8 +26,6 @@ public class DrawingSquares {
 
 
 
-
-
     }
 
     public static void setBackGround(Graphics a) {

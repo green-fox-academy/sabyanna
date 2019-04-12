@@ -34,13 +34,6 @@ public class CheckerBoard {
 
     }
 
-    public static void drawRectW(int x, int y, int size, Graphics a) {
-
-        a.setColor(Color.white);
-        a.fillRect(x, y, size, size);
-
-    }
-
     // Don't touch the code below
     static int WIDTH = 320;
     static int HEIGHT = 320;
