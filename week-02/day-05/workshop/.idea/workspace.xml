@@ -2,12 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe4c9e8d-9f01-4439-9745-aaf4e7db651d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Hexagon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Triangles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day-03/workshop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../day-03/workshop/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../extra/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../extra/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../extra/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../extra/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../extra/extra.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../extra/src/Triangles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../extra/src/TwoTriangles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NewHexa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Triangles2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../day-04/workshop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../day-04/workshop/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EnvelopeStar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EnvelopeStar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/workshop/Hexagon$ImagePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/workshop/Hexagon$ImagePanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/workshop/Hexagon.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/workshop/Hexagon.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Hexagon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hexagon.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,19 +25,18 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="workshop" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LinePlay.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="289">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -40,8 +47,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Quarters.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="30" column="9" lean-forward="true" selection-end-line="95" selection-end-column="1" />
+            <state relative-caret-position="442">
+              <caret line="30" column="9" selection-end-line="95" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -52,8 +59,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/EnvelopeStar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="578">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,8 +71,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Hexagon.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="37" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="37" />
+            <state relative-caret-position="408">
+              <caret line="72" column="58" lean-forward="true" selection-start-line="72" selection-start-column="58" selection-end-line="72" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -74,10 +81,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/NewHexa.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="22" selection-start-column="22" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Triangles.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+            <state relative-caret-position="221">
+              <caret line="17" selection-end-line="97" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Triangles2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="259">
+              <caret line="22" column="24" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,15 +130,17 @@
       <list>
         <option value="$PROJECT_DIR$/src/LinePlay.java" />
         <option value="$PROJECT_DIR$/src/Quarters.java" />
-        <option value="$PROJECT_DIR$/src/Triangles.java" />
         <option value="$PROJECT_DIR$/src/EnvelopeStar.java" />
+        <option value="$PROJECT_DIR$/src/NewHexa.java" />
         <option value="$PROJECT_DIR$/src/Hexagon.java" />
+        <option value="$PROJECT_DIR$/src/Triangles.java" />
+        <option value="$PROJECT_DIR$/src/Triangles2.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="631" />
-    <option name="width" value="742" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="676" />
+    <option name="width" value="697" />
     <option name="height" value="745" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -121,6 +151,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -137,8 +169,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -161,7 +191,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.EnvelopeStar">
+  <component name="RunManager" selected="Application.Hexagon">
     <configuration name="EnvelopeStar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="EnvelopeStar" />
       <module name="workshop" />
@@ -169,8 +199,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinePlay" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LinePlay" />
+    <configuration name="Hexagon" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Hexagon" />
       <module name="workshop" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -190,12 +220,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Triangles2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Triangles2" />
+      <module name="workshop" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Hexagon" />
+        <item itemvalue="Application.Triangles2" />
         <item itemvalue="Application.EnvelopeStar" />
         <item itemvalue="Application.Triangles" />
         <item itemvalue="Application.Quarters" />
-        <item itemvalue="Application.LinePlay" />
       </list>
     </recent_temporary>
   </component>
@@ -209,15 +247,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1555056371391</updated>
-      <workItem from="1555056375506" duration="8827000" />
+      <workItem from="1555056375506" duration="15998000" />
+      <workItem from="1555172319611" duration="2246000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8827000" />
+    <option name="totallyTimeSpent" value="18244000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
@@ -225,7 +264,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.50119907" side_tool="true" weight="0.24962178" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49880096" visible="true" weight="0.24962178" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49880096" visible="true" weight="0.09682299" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" />
@@ -234,8 +273,8 @@
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.32850242" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.09983897" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.3993559" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32850242" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
@@ -254,11 +293,23 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Hexagon.java</url>
+          <line>61</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/LinePlay.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="289">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -267,18 +318,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Quarters.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="30" column="9" lean-forward="true" selection-end-line="95" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Triangles.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+        <state relative-caret-position="442">
+          <caret line="30" column="9" selection-end-line="95" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -287,8 +328,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/EnvelopeStar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="578">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NewHexa.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22" selection-start-column="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Triangles.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="17" selection-end-line="97" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Triangles2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="22" column="24" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -297,8 +365,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Hexagon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="37" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="37" />
+        <state relative-caret-position="408">
+          <caret line="72" column="58" lean-forward="true" selection-start-line="72" selection-start-column="58" selection-end-line="72" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

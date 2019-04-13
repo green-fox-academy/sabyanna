@@ -6,17 +6,23 @@ import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
 public class Hexagon {
 
-    private static final int len = 30;
-
-/*
-
-    private static final double third = 0.3333;
-    private static final double kh = 0.6666;
-    private static final int MINIMUM = 1;
-    private static final double MAGIC = 4/3;
 
 
- */
+
+
+
+
+    static int WIDTH = 640;
+    static int HEIGHT = 640;
+
+    static final double degrees = 30.0;
+    static final double radians = Math.toRadians(degrees);
+    static final int len = 45;
+    static final double magic = Math.cos(radians) * len;
+    static final int wid = WIDTH/2;
+
+
+
 
 
     public static void mainDraw(Graphics g) {
@@ -25,9 +31,11 @@ public class Hexagon {
 
         setBackGround(g);
 
-
         g.setColor(Color.BLACK);
-        int width = 640;
+
+
+
+        drawHexagons(g, 0, 0.0, 0.0);
 
 
 
@@ -38,53 +46,65 @@ public class Hexagon {
         a.fillRect(0, 0, WIDTH, WIDTH);
     }
 
-    private static void drawHexagons(Graphics g, ) {
 
-
+    private static void drawHexagons(Graphics g, int i, double Magic, double mAgic) {
 
         /*
-
-        g.drawLine(x1, 0, x2, width);
-        g.drawLine(x1 *2, 0, x2*2, width );
-        g.drawLine(0, y1, width, y2);
-        g.drawLine(0, 2*y1, width, 2*y2);
-
-        if(y2 > 1) {
-            drawLines(g, (int)(x1*third*magic), (int)(y1* third), (int)(x2 * third), (int)(y2* third), (int)(width *third), magic * third);
-
-        }
+        double degrees = 30.0;
+        double radians = Math.toRadians(degrees);
+        int len = 45;
+        double magic = Math.cos(radians) * len;
+        int wid = WIDTH/2;
 
          */
 
 
+        int xp[] = {(int)(wid - len/2+mAgic), (int)(wid + len/2+mAgic), (int)(wid +len+mAgic), (int)(wid +len/2+mAgic), (int)(wid - len/2+mAgic), (int)(wid - len+mAgic) };
+        int yp[] = {(int)(wid-magic+Magic), (int)(wid - magic+Magic), (int)(wid+Magic), (int)(wid + magic+Magic), (int)(wid + magic+Magic), (int)(wid+Magic)};
+
+        g.drawPolygon(xp, yp, 6);
+        i++;
+        if (i < 4) {
+            drawHexagons(g,i, Magic-2*magic, mAgic);
+            drawHexagons(g,i, Magic+2*magic, mAgic);
+            drawHexagons(g,i, Magic-magic, mAgic+len*3/2);
+            drawHexagons(g,i, Magic-magic, mAgic-len*3/2);
+            drawHexagons(g,i, Magic+magic, mAgic-len*3/2);
+            drawHexagons(g,i, Magic+magic, mAgic+len*3/2);
+
+
+        }
+
+        /*
+        int xp[] = {wid - len/2, wid + len/2, wid +len, wid +len/2, wid - len/2, wid - len };
+        int yp[] = {(int)(wid-magic), (int)(wid - magic), wid, (int)(wid + magic), (int)(wid + magic), (int)(wid)};
+         */
+
+
+        //int w = WIDTH/2;
+        //int len = 60;
+
+
+        //int xp[] = (w-len/2, );
+        //int yp[] = (w-magic, );
+        //int np[] = (6);
+
+
+
+
+
+
 
 
 
 
     }
-/*
-    public static void drawLines(Graphics a) {
-        //a.translate((int)(WIDTH*third), 0);
-        a.setColor(Color.BLACK);
-        a.drawLine((int)(WIDTH*third), 0, (int)(WIDTH*third), WIDTH);
 
-        a.drawLine((int)(WIDTH*kh), 0, (int)(WIDTH*kh), WIDTH);
-
-        a.drawLine(0, (int)(WIDTH*third), WIDTH, (int)(WIDTH*third));
-
-        a.drawLine(0, (int)(WIDTH*kh), WIDTH, (int)(WIDTH*kh));
-
-
-    }
-
-
-
- */
 
 
     // Don't touch the code below
-    static int WIDTH = 640;
-    static int HEIGHT = 640;
+
+
 
     public static void main(String[] args) {
         JFrame jFrame = new JFrame("Drawing");
