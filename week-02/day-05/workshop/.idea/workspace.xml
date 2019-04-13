@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe4c9e8d-9f01-4439-9745-aaf4e7db651d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../extra/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../extra/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../extra/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../extra/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../extra/extra.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../extra/src/Triangles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../extra/src/TwoTriangles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NewHexa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Triangles2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day-04/workshop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../day-04/workshop/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/workshop/Hexagon$ImagePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/workshop/Hexagon$ImagePanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/workshop/Hexagon.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/workshop/Hexagon.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Hexagon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hexagon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../extra/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../extra/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../extra/src/TwoTriangles.java" beforeDir="false" afterPath="$PROJECT_DIR$/../extra/src/TwoTriangles.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
