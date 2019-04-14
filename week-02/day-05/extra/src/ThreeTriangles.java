@@ -4,7 +4,7 @@ import java.awt.*;
 
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
-public class TwoTriangles {
+public class ThreeTriangles {
 
 
     static int HEIGHT = 640;
@@ -41,7 +41,7 @@ public class TwoTriangles {
         if (i < 6) {
 
             g.setColor(Color.blue);
-            triangles(g, i, magic/2, MAGIC/2, x1, y1, Side, height);
+            triangles(g, i, magic, MAGIC/2, (int)(x1-Side), y1, Side/2, height);
 
             g.setColor(Color.MAGENTA);
             triangles(g, i, magic, MAGIC/2, (int)(x1+Side), y1, Side/2, height);

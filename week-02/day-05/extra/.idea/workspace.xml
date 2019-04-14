@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95ad11e7-e06a-4d5d-b96d-5a2f94e4dcfc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/ThreeTriangles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/extra/TwoTriangles$ImagePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/extra/TwoTriangles$ImagePanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/extra/TwoTriangles.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/extra/TwoTriangles.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TwoTriangles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TwoTriangles.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../workshop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../workshop/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -30,11 +34,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TwoTriangles.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="43" column="14" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
+            <state relative-caret-position="330">
+              <caret line="44" lean-forward="true" selection-end-line="80" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ThreeTriangles.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="40" column="20" lean-forward="true" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -59,6 +75,7 @@
       <list>
         <option value="$PROJECT_DIR$/src/Triangles.java" />
         <option value="$PROJECT_DIR$/src/TwoTriangles.java" />
+        <option value="$PROJECT_DIR$/src/ThreeTriangles.java" />
       </list>
     </option>
   </component>
@@ -114,7 +131,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TwoTriangles">
+  <component name="RunManager" selected="Application.ThreeTriangles">
+    <configuration name="ThreeTriangles" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ThreeTriangles" />
+      <module name="extra" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Triangles" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Triangles" />
       <module name="extra" />
@@ -131,6 +155,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ThreeTriangles" />
         <item itemvalue="Application.TwoTriangles" />
         <item itemvalue="Application.Triangles" />
       </list>
@@ -146,12 +171,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1555172739265</updated>
-      <workItem from="1555172742145" duration="8494000" />
+      <workItem from="1555172742145" duration="10546000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8494000" />
+    <option name="totallyTimeSpent" value="10546000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -202,20 +227,6 @@
           </properties>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/TwoTriangles.java</url>
-          <line>34</line>
-          <properties class="TwoTriangles" method="triangles">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/TwoTriangles.java</url>
-          <line>42</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -232,8 +243,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TwoTriangles.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="43" column="14" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
+        <state relative-caret-position="330">
+          <caret line="44" lean-forward="true" selection-end-line="80" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ThreeTriangles.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="40" column="20" lean-forward="true" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
