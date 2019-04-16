@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe4c9e8d-9f01-4439-9745-aaf4e7db651d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../extra/src/ThreeTriangles.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../extra/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../extra/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../extra/out/production/extra/TwoTriangles$ImagePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/../extra/out/production/extra/TwoTriangles$ImagePanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../extra/out/production/extra/TwoTriangles.class" beforeDir="false" afterPath="$PROJECT_DIR$/../extra/out/production/extra/TwoTriangles.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../extra/src/TwoTriangles.java" beforeDir="false" afterPath="$PROJECT_DIR$/../extra/src/TwoTriangles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -130,7 +125,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="745" />
@@ -167,7 +162,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../day-04/workshop" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../extra" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -240,16 +235,15 @@
       <option name="presentableId" value="Default" />
       <updated>1555056371391</updated>
       <workItem from="1555056375506" duration="15998000" />
-      <workItem from="1555172319611" duration="2246000" />
+      <workItem from="1555172319611" duration="2271000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18244000" />
+    <option name="totallyTimeSpent" value="18269000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
@@ -265,7 +259,7 @@
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.09983897" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.09983897" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.3993559" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32850242" />
