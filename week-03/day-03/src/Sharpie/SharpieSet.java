@@ -13,6 +13,7 @@ public class SharpieSet {
     }
 
     public List<Sharpie> getSharpieSet() {
+
         return sharpieSet;
     }
 
@@ -29,11 +30,15 @@ public class SharpieSet {
     }
 
     public void removeTrash() {
+        List<Sharpie> newSharpieSet = new ArrayList<>();
         for (int i = 0; i < sharpieSet.size(); i++) {
-            if (((sharpieSet.get(i)).isUsable())) {
-                sharpieSet.remove(sharpieSet.get(i));
+            if (((this.sharpieSet.get(i)).isUsable())) {
+                newSharpieSet.add(this.sharpieSet.get(i));
+            } else {
+
             }
         }
+        sharpieSet = newSharpieSet;
 
     }
 
