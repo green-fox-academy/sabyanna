@@ -10,23 +10,23 @@ public class Main {
         myCrew.returnCrew();
 
         for (int i = 0; i < 5; i++) {
-            myCrew.drinkSomeRum("Captain");
+            myCrew.ship.get(myCrew.getIndex("Captain")).drinkSomeRum();
         }
 
 
         for (int i = 0; i < 5; i++) {
-            myCrew.drinkSomeRum("Pirate1");
+            myCrew.ship.get(myCrew.getIndex("Pirate1")).drinkSomeRum();
         }
 
         System.out.println(myCrew.whosOnBoard());
 
-        myCrew.howsItGoingMate("Captain");
-        myCrew.howsItGoingMate("Pirate2");
+        myCrew.ship.get(myCrew.getIndex("Captain")).howsItGoingMate();
+        myCrew.ship.get(myCrew.getIndex("Pirate2")).howsItGoingMate();
 
         myCrew.returnCrew();
 
-        myCrew.brawl("Captain", "Pirate1");
-        myCrew.returnCrew();
+        myCrew.ship.get(myCrew.getIndex("Captain")).brawl(myCrew.ship.get(myCrew.getIndex("Pirate1")));
+
 
         System.out.println(myCrew.whosOnBoard());
 

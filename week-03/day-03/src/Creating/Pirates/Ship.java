@@ -20,19 +20,6 @@ public class Ship {
         }
     }
 
-
-
-    void drinkSomeRum(String Tname) {
-        for (int i = 0; i < ship.size(); i++ ) {
-            if ((ship.get(i).name).equals(Tname)) {
-                ship.get(i).drunkness++;
-                if (ship.get(i).drunkness > 4) {
-                    ship.get(i).isAlive = "out";
-                }
-            }
-        }
-    }
-
     int alivePirates() {
         int counter = 0;
         for (int i = 0; i < ship.size(); i++ ) {
@@ -60,61 +47,18 @@ public class Ship {
     }
 
 
-    void howsItGoingMate(String Pname) {
+
+
+    int getIndex (String name) {
+        int index = 0;
         for (int i = 0; i < ship.size(); i++ ) {
-            if ((ship.get(i).name).equals(Pname)) {
-                if (ship.get(i).drunkness <= 4) {
-                    System.out.println("Pour me anudder!");
-                } else {
-                    System.out.println("Arghh, I'ma Pirate. How d'ya d'ink its goin?");
-                }
+            if ((ship.get(i).name).equals(name)) {
+                index = i;
             }
         }
 
-    }
+        return index;
 
-    void brawl(String name1, String name2) {
-        int alive = 0;
-        for (int i = 0; i < ship.size(); i++ ) {
-            if ((ship.get(i).name).equals(name1)) {
-                alive++;
-            }
-        }
-        for (int i = 0; i < ship.size(); i++ ) {
-            if ((ship.get(i).name).equals(name2)) {
-                alive++;
-            }
-        }
-        if (alive == 2) {
-            int chance = randomWithRange(1, 3);
-            if ( chance == 1){
-                for (int i = 0; i < ship.size(); i++ ) {
-                    if ((ship.get(i).name).equals(name1)) {
-                        ship.get(i).isAlive = "dead";
-                    }
-                }
-            } else if (chance == 2) {
-                for (int i = 0; i < ship.size(); i++ ) {
-                    if ((ship.get(i).name).equals(name2)) {
-                        ship.get(i).isAlive = "dead";
-                    }
-                }
-
-            } else {
-                for (int i = 0; i < ship.size(); i++ ) {
-                    if ((ship.get(i).name).equals(name1)) {
-                        ship.get(i).isAlive = "out";
-
-                    }
-                }
-                for (int i = 0; i < ship.size(); i++ ) {
-                    if ((ship.get(i).name).equals(name2)) {
-                        ship.get(i).isAlive = "out";
-
-                    }
-                }
-            }
-        }
     }
 
     int score() {
@@ -127,13 +71,22 @@ public class Ship {
     boolean battle(Ship othership) {
         boolean winOrLose;
         if (this.score() > othership.score()) {
-            for (int i = 0; i < ship.size(); i++) {
-                ship.get(i).drunkness += randomWithRange(0, 20);
+            for (int i = 0; i < this.ship.size(); i++) {
+                this.ship.get(i).drunkness += randomWithRange(0, 20);
+            }
+            for (int i = 0; i < othership.ship.size(); i++) {
+                int isdead = randomWithRange(0, 2);
+                if (isdead == 1) {
+                    othership.ship.get(i).isAlive = "dead";
+                }
             }
             winOrLose = true;
         } else {
+            for (int i = 0; i < othership.ship.size(); i++) {
+                othership.ship.get(i).drunkness += randomWithRange(0, 20);
+            }
             for (int i = 0; i < ship.size(); i++) {
-                int isdead = randomWithRange(1, 2);
+                int isdead = randomWithRange(0, 2);
                 if (isdead == 1) {
                     ship.get(i).isAlive = "dead";
                 }
