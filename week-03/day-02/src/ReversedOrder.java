@@ -5,11 +5,11 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ReversedLines {
+public class ReversedOrder {
 
     public static void main(String[] args) {
         // Create a method that decrypts reversed-lines.txt
-        decrypt("reversed-lines.txt");
+        decrypt("reversed-order.txt");
 
 
     }
@@ -19,12 +19,8 @@ public class ReversedLines {
         try {
             List<String> lines = Files.readAllLines(file);
             List<String> newLines = new ArrayList<>();
-            for (String s: lines) {
-                StringBuilder sbf = new StringBuilder();
-                for (int i = 0; i < s.length(); i++) {
-                    sbf.append(s.charAt(s.length()-i-1));
-                }
-                newLines.add(sbf.toString());
+            for (int i = 0; i < lines.size(); i++) {
+                newLines.add(lines.get(lines.size()-i-1));
             }
             Files.write(file, newLines);
 

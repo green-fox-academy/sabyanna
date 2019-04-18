@@ -5,11 +5,11 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ReversedLines {
+public class EncodedLines {
 
     public static void main(String[] args) {
         // Create a method that decrypts reversed-lines.txt
-        decrypt("reversed-lines.txt");
+        decrypt("encoded-lines.txt");
 
 
     }
@@ -22,7 +22,14 @@ public class ReversedLines {
             for (String s: lines) {
                 StringBuilder sbf = new StringBuilder();
                 for (int i = 0; i < s.length(); i++) {
-                    sbf.append(s.charAt(s.length()-i-1));
+                    if (s.charAt(i) == ' ') {
+                        sbf.append(' ');
+                    } else {
+                        int charValue = s.charAt(i);
+                        String next = String.valueOf( (char) (charValue - 1));
+                        sbf.append(next);
+                    }
+
                 }
                 newLines.add(sbf.toString());
             }
