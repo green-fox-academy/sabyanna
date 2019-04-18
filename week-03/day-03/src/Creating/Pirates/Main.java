@@ -25,19 +25,13 @@ public class Main {
 
         myCrew.returnCrew();
 
+        myCrew.brawl("Captain", "Pirate1");
+        myCrew.returnCrew();
 
-
-
-
-
-
-
+        System.out.println(myCrew.whosOnBoard());
 
 
     }
-
-
-
 
 }
 

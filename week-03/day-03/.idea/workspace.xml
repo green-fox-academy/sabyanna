@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5ae32a9-9973-4feb-89a3-2ffe650c89b0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Creating/Pirates/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Creating/Pirates/Pirate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Creating/Pirates/Ship.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Creating/Pirates/BattleApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Creating/Pirates/Parrot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/day-03/Creating/Pirates/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/day-03/Creating/Pirates/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/day-03/Creating/Pirates/Pirate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/day-03/Creating/Pirates/Pirate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/day-03/Creating/Pirates/Ship.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/day-03/Creating/Pirates/Ship.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Creating/Pirates/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Creating/Pirates/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Creating/Pirates/Pirate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Creating/Pirates/Pirate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Creating/Pirates/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Creating/Pirates/Ship.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,7 +49,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Creating/Farm/Farm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="39">
+            <state relative-caret-position="421">
               <caret line="50" selection-start-line="50" selection-end-line="50" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -60,21 +65,41 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Creating/Pirates/Pirate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+            <state relative-caret-position="187">
+              <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
               <folding>
                 <element signature="e#184#185#0" expanded="true" />
                 <element signature="e#228#229#0" expanded="true" />
+                <element signature="e#399#400#0" expanded="true" />
+                <element signature="e#428#429#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Creating/Pirates/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+            <state relative-caret-position="306">
+              <caret line="30" column="49" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Creating/Pirates/BattleApp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="111">
+              <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Creating/Pirates/Parrot.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -82,12 +107,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Creating/Pirates/Ship.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="56" lean-forward="true" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="56" />
+            <state relative-caret-position="-450">
+              <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#982#983#0" expanded="true" />
-                <element signature="e#1009#1010#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -146,17 +169,18 @@
         <option value="$PROJECT_DIR$/src/Creating/Blog/Main.java" />
         <option value="$PROJECT_DIR$/src/Creating/Pirates/Pirates.java" />
         <option value="$PROJECT_DIR$/src/Creating/Pirates/TheCrew.java" />
-        <option value="$PROJECT_DIR$/src/Creating/Pirates/Pirate.java" />
-        <option value="$PROJECT_DIR$/src/Creating/Pirates/Ship.java" />
         <option value="$PROJECT_DIR$/src/Creating/Pirates/Main.java" />
+        <option value="$PROJECT_DIR$/src/Creating/Pirates/Pirate.java" />
+        <option value="$PROJECT_DIR$/src/Creating/Pirates/Parrot.java" />
+        <option value="$PROJECT_DIR$/src/Creating/Pirates/Ship.java" />
+        <option value="$PROJECT_DIR$/src/Creating/Pirates/BattleApp.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="112" />
-    <option name="y" value="-16" />
+    <option name="x" value="-7" />
     <option name="width" value="697" />
-    <option name="height" value="743" />
+    <option name="height" value="745" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -199,6 +223,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Creating" type="462c0819:PsiDirectoryNode" />
               <item name="FleetOfThings" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="day-03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="day-03" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Creating" type="462c0819:PsiDirectoryNode" />
+              <item name="Pirates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="day-03" type="b2602c69:ProjectViewProjectNode" />
@@ -268,7 +299,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main (4)">
+  <component name="RunManager" selected="Application.BattleApp">
+    <configuration name="BattleApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Creating.Pirates.BattleApp" />
+      <module name="day-03" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Creating.Pirates.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Creating.Farm.Main" />
       <module name="day-03" />
@@ -309,19 +353,6 @@
       </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="PetrolStation.Main" />
-      <module name="day-03" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="PetrolStation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Creating.Pirates.Main" />
       <module name="day-03" />
       <extension name="coverage">
@@ -336,11 +367,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BattleApp" />
         <item itemvalue="Application.Main (4)" />
         <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main (2)" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -355,7 +386,7 @@
       <option name="presentableId" value="Default" />
       <updated>1555492498189</updated>
       <workItem from="1555492506689" duration="21045000" />
-      <workItem from="1555571066162" duration="15661000" />
+      <workItem from="1555571066162" duration="20377000" />
     </task>
     <servers />
   </component>
@@ -392,7 +423,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36706000" />
+    <option name="totallyTimeSpent" value="41422000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -403,7 +434,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.088579796" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.23645681" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" />
@@ -412,7 +443,7 @@
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.30948678" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.19751166" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.33281493" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.14618973" />
@@ -798,7 +829,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Creating/Farm/Farm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
+        <state relative-caret-position="421">
           <caret line="50" selection-start-line="50" selection-end-line="50" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -812,31 +843,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Creating/Pirates/Pirate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+        <state relative-caret-position="187">
+          <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
           <folding>
             <element signature="e#184#185#0" expanded="true" />
             <element signature="e#228#229#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Creating/Pirates/Ship.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="56" lean-forward="true" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#982#983#0" expanded="true" />
-            <element signature="e#1009#1010#0" expanded="true" />
+            <element signature="e#399#400#0" expanded="true" />
+            <element signature="e#428#429#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Creating/Pirates/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+        <state relative-caret-position="306">
+          <caret line="30" column="49" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Creating/Pirates/Ship.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-450">
+          <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Creating/Pirates/Parrot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Creating/Pirates/BattleApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
         </state>
       </provider>
     </entry>
