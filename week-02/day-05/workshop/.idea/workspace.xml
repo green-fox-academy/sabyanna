@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe4c9e8d-9f01-4439-9745-aaf4e7db651d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Squares.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../week-04/HW/src/Mentor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../week-04/HW/src/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../week-04/HW/src/Sponsor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../week-04/HW/src/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../week-04/HW/src/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../week-03/day-03/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../week-03/day-03/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week-04/HW/src/Mentor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week-04/HW/src/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week-04/HW/src/Sponsor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week-04/HW/src/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week-04/HW/src/Test.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -66,7 +63,7 @@
         <entry file="file://$PROJECT_DIR$/src/Hexagon.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="649">
-              <caret line="112" column="61" lean-forward="true" selection-start-line="112" selection-start-column="61" selection-end-line="112" selection-end-column="61" />
+              <caret line="112" column="61" selection-start-line="112" selection-start-column="61" selection-end-line="112" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -257,12 +254,12 @@
       <updated>1555056371391</updated>
       <workItem from="1555056375506" duration="15998000" />
       <workItem from="1555172319611" duration="2271000" />
-      <workItem from="1555946490880" duration="884000" />
+      <workItem from="1555946490880" duration="915000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19153000" />
+    <option name="totallyTimeSpent" value="19184000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -279,10 +276,10 @@
       <window_info anchor="bottom" id="Version Control" order="1" />
       <window_info anchor="bottom" id="Terminal" order="2" />
       <window_info anchor="bottom" id="Database Changes" order="3" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="4" sideWeight="0.50073206" side_tool="true" visible="true" weight="0.09953344" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="4" sideWeight="0.50073206" side_tool="true" visible="true" weight="0.32970452" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.49926794" visible="true" weight="0.09953344" />
+      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.49926794" weight="0.09953344" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.3993559" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32850242" />
@@ -375,7 +372,7 @@
     <entry file="file://$PROJECT_DIR$/src/Hexagon.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="649">
-          <caret line="112" column="61" lean-forward="true" selection-start-line="112" selection-start-column="61" selection-end-line="112" selection-end-column="61" />
+          <caret line="112" column="61" selection-start-line="112" selection-start-column="61" selection-end-line="112" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
