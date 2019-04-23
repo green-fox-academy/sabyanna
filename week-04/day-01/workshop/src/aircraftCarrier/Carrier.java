@@ -41,9 +41,6 @@ public class Carrier {
         }
       }
     }
-
-
-
   }
 
   public void fight(Carrier anotherCarrier){
@@ -52,10 +49,6 @@ public class Carrier {
       carrier.get(i).setAmmunition(0);
     }
   }
-
-
-
-
 
   //gettersSetters
 

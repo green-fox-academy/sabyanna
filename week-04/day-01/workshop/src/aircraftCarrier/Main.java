@@ -15,7 +15,6 @@ public class Main {
 
     System.out.println("");
 
-    //////
     F16 otherF16 = new F16();
     F35 otherF35 = new F35();
     F35 otherF352 = new F35();
@@ -41,30 +40,5 @@ public class Main {
     otherCarrier.getStatus();
 
     myCarrier.fill();
-
-
-
-
-
-
-
-
-/*
-    System.out.println(myF16.getStatus());
-    System.out.println(myF35.getStatus());
-
-    System.out.println("");
-
-    System.out.println(myF16.refill(200));
-    System.out.println(myF35.refill(200));
-
-    System.out.println("");
-
-    System.out.println(myF16.getStatus());
-    System.out.println(myF35.getStatus());
-
- */
-
-
   }
 }
