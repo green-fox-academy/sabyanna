@@ -5,6 +5,23 @@ public class Main {
     F16 myF16 = new F16();
     F35 myF35 = new F35();
 
+
+
+    Carrier myCarrier = new Carrier(100, 100);
+    myCarrier.add(myF16);
+    myCarrier.add(myF35);
+    myCarrier.getStatus();
+
+    myCarrier.fill();
+
+    System.out.println("");
+    myCarrier.getStatus();
+
+
+
+
+
+/*
     System.out.println(myF16.getStatus());
     System.out.println(myF35.getStatus());
 
@@ -17,5 +34,9 @@ public class Main {
 
     System.out.println(myF16.getStatus());
     System.out.println(myF35.getStatus());
+
+ */
+
+
   }
 }

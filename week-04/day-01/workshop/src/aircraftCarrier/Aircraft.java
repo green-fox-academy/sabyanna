@@ -24,12 +24,12 @@ public class Aircraft {
   }
 
   public String getType() {
-    return getClass().toString();
+    return "none";
   }
 
   public String getStatus() {
     allDamage = ammunition * baseDamage;
-    return ("Type " + getType() + ", Ammo: " + ammunition + ", Base Damage: " + baseDamage + ", All Damage = " + allDamage);
+    return ("Type: " + getType() + ", Ammo: " + ammunition + ", Base Damage: " + baseDamage + ", All Damage = " + allDamage);
   }
 
   public boolean isPriority(){

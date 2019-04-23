@@ -6,4 +6,9 @@ public class F35 extends Aircraft {
     setMaxAmmo(12);
     setBaseDamage(50);
   }
+
+  @Override
+  public String getType(){
+    return "F35";
+  }
 }

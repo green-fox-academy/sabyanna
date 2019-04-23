@@ -13,6 +13,10 @@ public class Carrier {
     this.HP = HP;
   }
 
+  public void add(Aircraft aircraft) {
+    carrier.add(aircraft);
+  }
+
   public void fill() {
     if (getAllAmmo() <= store) {
       for (int i = 0; i < carrier.size(); i++ ){
@@ -36,12 +40,28 @@ public class Carrier {
 
   //gettersSetters
 
+  public void getStatus(){
+    System.out.println("HP: " + HP + ", Aircraft count: " + carrier.size() + ", Ammo Storage: " + store + ", Total damage: " + getAllDamage());
+    System.out.println("Aircrafts:");
+    for (int i = 0; i < carrier.size(); i++) {
+      System.out.println(carrier.get(i).getStatus());
+    }
+  }
+
   public int getAllAmmo(){
     int allAmmo = 0;
     for (int i = 0; i < carrier.size(); i++) {
       allAmmo += carrier.get(i).getMaxAmmo()-carrier.get(i).getAmmunition();
     }
     return allAmmo;
+  }
+
+  public int getAllDamage(){
+    int dam = 0;
+    for (int i = 0; i < carrier.size(); i++) {
+      dam += carrier.get(i).getBaseDamage() * carrier.get(i).getAmmunition();
+    }
+    return dam;
   }
 
   public int getStore() {

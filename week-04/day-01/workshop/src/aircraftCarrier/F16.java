@@ -6,4 +6,9 @@ public class F16 extends Aircraft{
     setMaxAmmo(8);
     setBaseDamage(30);
   }
+
+  @Override
+  public String getType(){
+    return "F16";
+  }
 }
