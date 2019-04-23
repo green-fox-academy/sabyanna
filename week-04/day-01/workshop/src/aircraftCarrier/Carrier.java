@@ -2,6 +2,7 @@ package aircraftCarrier;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.NoSuchElementException;
 
 public class Carrier {
   private int store;
@@ -18,25 +19,38 @@ public class Carrier {
   }
 
   public void fill() {
-    if (getAllAmmo() <= store) {
-      for (int i = 0; i < carrier.size(); i++ ){
-        store = carrier.get(i).refill(store);
-      }
+    if (store == 0) {
+      throw new NoSuchElementException();
     } else {
-      for (int j = 0; j< carrier.size(); j++){
-        if (carrier.get(j).isPriority()) {
-          store = carrier.get(j).refill(store);
-
+      if (getAllAmmo() <= store) {
+        for (int i = 0; i < carrier.size(); i++ ){
+          store = carrier.get(i).refill(store);
         }
-      }
-      for (int j = 0; j< carrier.size(); j++){
-        if (!(carrier.get(j).isPriority())) {
-          store = carrier.get(j).refill(store);
+      } else {
+        for (int j = 0; j< carrier.size(); j++){
+          if (carrier.get(j).isPriority()) {
+            store = carrier.get(j).refill(store);
 
+          }
+        }
+        for (int j = 0; j< carrier.size(); j++){
+          if (!(carrier.get(j).isPriority())) {
+            store = carrier.get(j).refill(store);
+
+          }
         }
       }
     }
 
+
+
+  }
+
+  public void fight(Carrier anotherCarrier){
+    anotherCarrier.setHP(anotherCarrier.getHP()-getAllDamage());
+    for (int i = 0; i < carrier.size(); i++){
+      carrier.get(i).setAmmunition(0);
+    }
   }
 
 
@@ -46,11 +60,16 @@ public class Carrier {
   //gettersSetters
 
   public void getStatus(){
-    System.out.println("HP: " + HP + ", Aircraft count: " + carrier.size() + ", Ammo Storage: " + store + ", Total damage: " + getAllDamage());
-    System.out.println("Aircrafts:");
-    for (int i = 0; i < carrier.size(); i++) {
-      System.out.println(carrier.get(i).getStatus());
+    if (HP > 0) {
+      System.out.println("HP: " + HP + ", Aircraft count: " + carrier.size() + ", Ammo Storage: " + store + ", Total damage: " + getAllDamage());
+      System.out.println("Aircrafts:");
+      for (int i = 0; i < carrier.size(); i++) {
+        System.out.println(carrier.get(i).getStatus());
+      }
+    } else {
+      System.out.println("It's dead Jimmy");
     }
+
   }
 
   public int getAllAmmo(){
