@@ -5,6 +5,7 @@ public class F35 extends Aircraft {
     super();
     setMaxAmmo(12);
     setBaseDamage(50);
+    setPriority(true);
   }
 
   @Override

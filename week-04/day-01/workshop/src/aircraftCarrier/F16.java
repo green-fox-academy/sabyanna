@@ -5,6 +5,7 @@ public class F16 extends Aircraft{
     super();
     setMaxAmmo(8);
     setBaseDamage(30);
+    setPriority(false);
   }
 
   @Override

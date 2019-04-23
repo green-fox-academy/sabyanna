@@ -6,6 +6,7 @@ public class Aircraft {
   private int maxAmmo;
   private int baseDamage;
   private int allDamage;
+  private boolean isPriority;
 
   public Aircraft(){
     ammunition = 0;
@@ -18,8 +19,14 @@ public class Aircraft {
   }
 
   public int refill(int ammo) {
-    ammo -= maxAmmo - ammunition;
-    ammunition = maxAmmo;
+    if (maxAmmo - ammunition <= ammo) {
+      ammo -= maxAmmo - ammunition;
+      ammunition = maxAmmo;
+    } else {
+      ammunition = ammo;
+      ammo = 0;
+    }
+
     return ammo;
   }
 
@@ -33,13 +40,7 @@ public class Aircraft {
   }
 
   public boolean isPriority(){
-    boolean isit = false;
-    if (getClass().equals("F35")){
-      isit = true;
-    } else if (getClass().equals("F16")){
-      isit = false;
-    }
-    return isit;
+    return isPriority;
   }
 
   //gettersSetters
@@ -60,12 +61,12 @@ public class Aircraft {
     return allDamage;
   }
 
-  public void setMaxAmmo(int maxAmmo) {
-    this.maxAmmo = maxAmmo;
-  }
-
   public int getBaseDamage() {
     return baseDamage;
+  }
+
+  public void setMaxAmmo(int maxAmmo) {
+    this.maxAmmo = maxAmmo;
   }
 
   public void setBaseDamage(int baseDamage) {
@@ -74,5 +75,9 @@ public class Aircraft {
 
   public void setAllDamage(int allDamage) {
     this.allDamage = allDamage;
+  }
+
+  public void setPriority(boolean priority) {
+    isPriority = priority;
   }
 }

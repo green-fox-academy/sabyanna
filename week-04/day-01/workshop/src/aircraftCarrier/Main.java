@@ -7,7 +7,7 @@ public class Main {
 
 
 
-    Carrier myCarrier = new Carrier(100, 100);
+    Carrier myCarrier = new Carrier(10, 100);
     myCarrier.add(myF16);
     myCarrier.add(myF35);
     myCarrier.getStatus();

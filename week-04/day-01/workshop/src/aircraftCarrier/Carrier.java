@@ -20,18 +20,23 @@ public class Carrier {
   public void fill() {
     if (getAllAmmo() <= store) {
       for (int i = 0; i < carrier.size(); i++ ){
-        store =carrier.get(i).refill(store);
+        store = carrier.get(i).refill(store);
       }
     } else {
       for (int j = 0; j< carrier.size(); j++){
-        if (carrier.get(j).isPriority()){
+        if (carrier.get(j).isPriority()) {
           store = carrier.get(j).refill(store);
+
+        }
+      }
+      for (int j = 0; j< carrier.size(); j++){
+        if (!(carrier.get(j).isPriority())) {
+          store = carrier.get(j).refill(store);
+
         }
       }
     }
-    for (int j = 0; j< carrier.size(); j++){
-        store = carrier.get(j).refill(store);
-    }
+
   }
 
 
