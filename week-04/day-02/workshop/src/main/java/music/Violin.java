@@ -1,5 +1,4 @@
 package main.java.music;
 
-public class Main {
-
+public class Violin {
 }
