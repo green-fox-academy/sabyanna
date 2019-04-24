@@ -17,6 +17,10 @@ public class Main {
     Collections.sort(mySet.dominoes);
     System.out.println(mySet.dominoes);
 
+    for (Domino d : mySet.dominoes) {
+      d.printAllFields();
+    }
+
   }
 
 

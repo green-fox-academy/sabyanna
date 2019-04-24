@@ -1,5 +1,7 @@
 package comparable;
 
+import printable.Printable;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -17,8 +19,6 @@ public class Set{
     dominoes.add(new Domino(2, 4));
     dominoes.add(new Domino(7, 1));
   }
-
-
 
 
 

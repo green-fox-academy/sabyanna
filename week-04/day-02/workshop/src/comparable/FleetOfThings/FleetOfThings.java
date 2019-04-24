@@ -19,5 +19,11 @@ public class FleetOfThings {
 
         Collections.sort(fleet.things);
         System.out.println(fleet);
+
+        for (Thing t : fleet.things) {
+            t.printAllFields();
+        }
+
+
     }
 }

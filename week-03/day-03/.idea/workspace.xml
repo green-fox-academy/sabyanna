@@ -2,18 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5ae32a9-9973-4feb-89a3-2ffe650c89b0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../week-04/day-02/workshop/src/charSequence/Gnirts1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../week-04/day-02/workshop/src/charSequence/Gnirts2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../week-04/day-02/workshop/src/charSequence/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../week-04/day-02/workshop/src/charSequence/Shifter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../week-04/day-02/workshop/src/charSequence/Shifter2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../week-04/day-02/workshop/src/main/java/music/BassGuitar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../week-04/day-02/workshop/src/main/java/music/ElectricGuitar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../week-04/day-02/workshop/src/main/java/music/Instrument.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../week-04/day-02/workshop/src/main/java/music/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../week-04/day-02/workshop/src/main/java/music/StringedInstrument.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../week-04/day-02/workshop/src/AppMusic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../week-04/day-02/workshop/src/charSequence/Gnirts.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week-04/day-02/workshop/src/main/java/music/BassGuitar.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../week-04/day-02/workshop/src/main/java/music/BassGuitar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week-04/day-02/workshop/src/main/java/music/ElectricGuitar.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../week-04/day-02/workshop/src/main/java/music/ElectricGuitar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week-04/day-02/workshop/src/main/java/music/Instrument.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../week-04/day-02/workshop/src/main/java/music/Instrument.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week-04/day-02/workshop/src/main/java/music/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../week-04/day-02/workshop/src/main/java/music/Violin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week-04/day-02/workshop/src/main/java/music/Sound.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week-04/day-02/workshop/src/main/java/music/StringedInstrument.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../week-04/day-02/workshop/src/main/java/music/StringedInstrument.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,7 +39,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Creating/FleetOfThings/FleetOfThings.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
+            <state relative-caret-position="340">
               <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
@@ -122,7 +118,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="745" />
@@ -291,7 +287,7 @@
       <workItem from="1555492506689" duration="21045000" />
       <workItem from="1555571066162" duration="24656000" />
       <workItem from="1555759341191" duration="69000" />
-      <workItem from="1556101410250" duration="731000" />
+      <workItem from="1556101410250" duration="736000" />
     </task>
     <servers />
   </component>
@@ -328,18 +324,17 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46501000" />
+    <option name="totallyTimeSpent" value="46506000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="676" y="0" width="697" height="745" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.18502203" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.28623718" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" />
@@ -348,7 +343,7 @@
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.2933754" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.28926906" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.29237947" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.14618973" />
@@ -763,7 +758,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Creating/FleetOfThings/FleetOfThings.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
+        <state relative-caret-position="340">
           <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>

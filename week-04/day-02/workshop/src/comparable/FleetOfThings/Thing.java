@@ -1,9 +1,11 @@
 package comparable.FleetOfThings;
 
+import printable.Printable;
+
 /**
  * Created by aze on 2017.03.29..
  */
-public class Thing implements Comparable<Thing>{
+public class Thing implements Comparable<Thing>, Printable {
     private String name;
     private boolean completed;
 
@@ -27,6 +29,11 @@ public class Thing implements Comparable<Thing>{
         }
         return result;
 
+    }
+
+    @Override
+    public void printAllFields() {
+        System.out.println(toString());
     }
 
     /*

@@ -1,8 +1,10 @@
 package comparable;
 
+import printable.Printable;
+
 import java.util.Arrays;
 
-public class Domino implements Comparable<Domino>{
+public class Domino implements Comparable<Domino>, Printable{
   private final int left;
   private final int right;
 
@@ -23,21 +25,6 @@ public class Domino implements Comparable<Domino>{
   public String toString() {
     return "[" + left + ", " + right + "]";
   }
-  /*
-
-  @Override
-  public int compareTo(Domino o) {
-    int result = this.left.compareTo(o.getLeftSide());
-  }
-
-   */
-
-  /*
-
-  public int compareTo(Domino o){
-    return Integer.compare(this.left, o.left);
-  }
-   */
 
 
   public int compareTo(Domino o){
@@ -49,5 +36,8 @@ public class Domino implements Comparable<Domino>{
   }
 
 
-
+  @Override
+  public void printAllFields() {
+    System.out.println(toString());
+  }
 }

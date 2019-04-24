@@ -1,13 +1,19 @@
 package main.java.music;
 
-public class BassGuitar extends StringedInstrument {
+public class BassGuitar extends StringedInstrument{
 
-  public BassGuitar(String name) {
-    super("Bass Guitar");
+  public BassGuitar() {
+    setName("Bass Guitar");
+    setNumberOfStrings(4);
+  }
+
+  public BassGuitar(int i) {
+    setName("Bass Guitar");
+    setNumberOfStrings(i);
   }
 
   @Override
-  public void sound() {
-    System.out.println( "Duum-duum-duum");
+  public String sound() {
+    return "Duum-duum-duum";
   }
 }
