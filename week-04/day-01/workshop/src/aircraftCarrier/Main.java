@@ -5,7 +5,7 @@ public class Main {
     F16 myF16 = new F16();
     F35 myF35 = new F35();
 
-    Carrier myCarrier = new Carrier(20, 100);
+    Carrier myCarrier = new Carrier(13, 100);
     myCarrier.add(myF16);
     myCarrier.add(myF35);
 
