@@ -1,4 +1,4 @@
-package Clonable;
+package clonable;
 
 public class Person {
   enum gender {male, female}

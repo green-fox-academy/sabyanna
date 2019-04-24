@@ -1,4 +1,4 @@
-package Clonable;
+package clonable;
 
 public class Student extends Person implements Cloneable{
 
