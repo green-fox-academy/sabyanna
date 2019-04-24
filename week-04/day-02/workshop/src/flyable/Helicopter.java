@@ -1,6 +1,11 @@
 package flyable;
 
-public class Helicopter implements Flyable{
+public class Helicopter extends Vehicle implements Flyable{
+
+
+  public Helicopter(String name, String type, String color) {
+    super(name, type, color);
+  }
 
   @Override
   public void land() {
