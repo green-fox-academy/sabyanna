@@ -6,18 +6,16 @@ public class Fibonacci {
         //Define a recursive fibonacci(n) method that returns the nth fibonacci number, with n=0 representing the
         // start of the sequence.
 
-        System.out.println(fib(3, 0, 1, 5));
+        System.out.println(fib(5));
     }
 
-    public static int fib(int szám, int a, int b, int n) {
+    public static int fib(int n) {
         if (n == 1) {
             return 0;
         } else if (n == 2) {
             return 1;
-        } else if (n == szám) {
-            return a + b;
         } else {
-            return fib(szám+1, b, b + a, n);
+            return fib(n-2) +  fib(n-1);
         }
 
     }
