@@ -3,26 +3,21 @@ package symmetricMatrix;
 import java.lang.reflect.Array;
 
 public class Symmetric {
+  boolean result = true;
 
-  public void isSymmetric(int[][] myArray) {
+  public boolean isSymmetric(int[][] myArray) {
+    boolean result = true;
+
 
     for (int i = 0; i < myArray.length; i++) {
       for (int j = 0; j < myArray[i].length; j++){
-        System.out.print(myArray[i][j]+ " ");
-      }
-      System.out.println("");
-    }
-    
-
-    int toCheck[][] = myArray;
-
-    for (int i = 0; i < myArray.length; i++) {
-      for (int j = 0; j < myArray[i].length; j++){
-        toCheck[j][i] = myArray[i][j];
+        if (myArray[i][j] != myArray[j][i]) {
+          result = false;
+        }
       }
     }
+    System.out.println("");
 
-
-
+    return result;
   }
 }

@@ -9,7 +9,14 @@ public class Main {
             {27, 29, 37,},
     };
 
-    symm.isSymmetric(mat);
+    System.out.println(symm.isSymmetric(mat));
+
+    int mat2[][] = { {10, 20, 30},
+            {20, 25, 35},
+            {30, 35, 37,},
+    };
+
+    System.out.println(symm.isSymmetric(mat2));
 
 
   }
