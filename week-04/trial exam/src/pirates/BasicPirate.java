@@ -14,7 +14,7 @@ public class BasicPirate extends Pirate  implements Pirateable{
   }
 
   @Override
-  public void part() {
+  public void party() {
     setHP(getHP() + 1);
   }
 }

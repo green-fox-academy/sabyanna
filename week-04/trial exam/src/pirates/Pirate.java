@@ -1,6 +1,6 @@
 package pirates;
 
-public abstract class Pirate{
+public abstract class Pirate implements Pirateable{
   private String name;
   private int gold;
   private int HP;
@@ -48,7 +48,7 @@ public abstract class Pirate{
     this.HP = HP;
   }
 
-  public boolean isHasWoodenLeg() {
+  public boolean isWoodenLeged() {
     return woodenLeged;
   }
 
