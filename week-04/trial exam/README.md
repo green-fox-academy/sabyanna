@@ -19,7 +19,7 @@
 
 ## Symmetric matrix
 
-Create a function named `symmetricMatrix` 
+Create a function named `isSymmetric` 
 that takes an n×n integer matrix (two dimensional array/list) as a parameter
 and returns true if the matrix is symmetric
 or false if it is not.
@@ -120,7 +120,12 @@ Write a program which can store pirates in a ship.
 
 ### How can you generate a random number?
 
-*type your answer here*--
+To generate a random number first, you have to import the Math class, which contains the random() method.
+on its own Math.random() returns a //0.0 <= double value < 1//.
+To give it a range, you have to first multiply it by the range you desire plus 1 (so the max value is also included)
+then you have to add the min value to it so you get numbers starting from not zero but the min, and going till max.
+(Math.random()*((max-min)+1))+min --> generates a random number between min and max.
+
 
 ### What is a ternary operator? How does it work?
 
