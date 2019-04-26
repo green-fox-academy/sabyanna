@@ -129,4 +129,10 @@ then you have to add the min value to it so you get numbers starting from not ze
 
 ### What is a ternary operator? How does it work?
 
-*type your answer here*
+A thernary operator takes three elements and combines them into a desired third.
+In java a conditional thernary operator is equivalent to an if-else statement that gives a return value, but has a shorter syntax.
+It is the only operand in Java that excepts three operands
+Syntax: booleanExpression ? expression1 : expression2
+The operator returns expression1 if the booleanExpression is True,
+and returns expression2 if the booleanExpression is false
+
