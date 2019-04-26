@@ -11,10 +11,10 @@ public class Ship {
   }
 
   public void add(Captain captain){
-    boolean needCaptain = false;
+    boolean needCaptain = true;
     for (Pirate pirate: ship){
       if (pirate instanceof Captain) {
-        needCaptain = true;
+        needCaptain = false;
       }
     }
     if (needCaptain){

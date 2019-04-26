@@ -10,7 +10,7 @@ public abstract class Pirate implements Pirateable{
     this.name = name;
     this.gold = gold;
     this.woodenLeged = hasWoodenLeg;
-    int HP = 10;
+    HP = 10;
   }
 
 
