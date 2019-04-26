@@ -58,21 +58,18 @@ public class MostCommon {
       Integer maxValue2 = 0;
       String maxKey2 = "";
 
-
       for (Map.Entry<String, Integer> entry: myDictionary.entrySet()) {
         if (entry.getValue() > maxValue2) {
           maxValue2 = entry.getValue();
           maxKey2 = entry.getKey();
         }
-
       }
       returnHash.put(maxKey, maxValue);
       returnHash.put(maxKey2, maxValue2);
-      
+
     } catch (IOException e) {
       System.out.println("File does not exist!");
     }
     return returnHash;
-
   }
 }
