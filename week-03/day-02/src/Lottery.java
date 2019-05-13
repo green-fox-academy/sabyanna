@@ -6,39 +6,39 @@ import java.nio.file.Paths;
 import java.util.*;
 
 public class Lottery {
-    public static void main(String[] args) {
+  public static void main(String[] args) {
 
-        // Create a method that find the 5 most common lottery numbers in lottery.csv
+    // Create a method that find the 5 most common lottery numbers in lottery.csv
 
-        uniques("lottery.csv");
-    }
+    uniques("lottery.csv");
+  }
 
-    public static void uniques(String fileName) {
-        Path file = Paths.get(fileName);
+  public static void uniques(String fileName) {
+    Path file = Paths.get(fileName);
 
-        try {
-            List<String> originalData = Files.readAllLines(file);
-            List<String> numbers = new ArrayList<>();
-            for (String s : originalData) {
-                String[] lines = s.split(";");
-                for (int i = 11; i <16; i++) {
-                    numbers.add(lines[i]);
-                }
+    try {
+      List<String> originalData = Files.readAllLines(file);
+      List<String> numbers = new ArrayList<>();
+      for (String s : originalData) {
+        String[] lines = s.split(";");
+        for (int i = 11; i < 16; i++) {
+          numbers.add(lines[i]);
+        }
 
-            }
-            Map<String, Integer> counts = new HashMap<>();
+      }
+      Map<String, Integer> counts = new HashMap<>();
 
-            for (String nr: numbers) {
-                if (counts.containsKey(nr)) {
-                    counts.put(nr, counts.get(nr)+1);
-                } else {
-                    counts.put(nr, 1);
-                }
-            }
+      for (String nr : numbers) {
+        if (counts.containsKey(nr)) {
+          counts.put(nr, counts.get(nr) + 1);
+        } else {
+          counts.put(nr, 1);
+        }
+      }
 
-            System.out.println(counts.toString());
+      System.out.println(counts.toString());
 
-            Iterator iter = counts.entrySet().iterator();
+      Iterator iter = counts.entrySet().iterator();
 
 
 /*
@@ -95,12 +95,10 @@ public class Lottery {
  */
 
 
-        } catch (IOException e) {
-            System.out.println("nope");
-        }
+    } catch (IOException e) {
+      System.out.println("nope");
     }
-
-
+  }
 
 
 }
