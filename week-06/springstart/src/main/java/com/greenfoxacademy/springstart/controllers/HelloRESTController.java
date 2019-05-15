@@ -4,18 +4,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.concurrent.atomic.AtomicLong;
+
 @RestController
 public class HelloRESTController {
 
+  Greeting myGreet = new Greeting( "Hi ");
 
   @RequestMapping("/greeting")
-  public String greeting(@RequestParam(required = true) String name) {
-    Greeting myGreet = new Greeting(1, "Hi ");
+  public Greeting greeting(@RequestParam(required = true) String name) {
+    
+    myGreet.getId().getAndAdd(1);
+    return myGreet;
 
-    return myGreet.getContent() + name;
-
-
-    //String greeting = myGreet.getContent() + name;
-    //return greeting;
   }
 }

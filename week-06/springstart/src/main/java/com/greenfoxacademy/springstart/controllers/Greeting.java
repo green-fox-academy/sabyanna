@@ -2,21 +2,22 @@ package com.greenfoxacademy.springstart.controllers;
 
 import org.springframework.stereotype.Controller;
 
-public class Greeting {
-  private long id;
-  private String content;
+import java.util.concurrent.atomic.AtomicLong;
 
-  public Greeting(long id, String content) {
-    this.id = id;
+public class Greeting {
+  private String content;
+  private AtomicLong id = new AtomicLong();
+
+
+  public Greeting(String content) {
     this.content = content;
   }
 
-
-  public long getId() {
+  public AtomicLong getId() {
     return id;
   }
 
-  public void setId(long id) {
+  public void setId(AtomicLong id) {
     this.id = id;
   }
 
@@ -27,4 +28,5 @@ public class Greeting {
   public void setContent(String content) {
     this.content = content;
   }
+
 }
