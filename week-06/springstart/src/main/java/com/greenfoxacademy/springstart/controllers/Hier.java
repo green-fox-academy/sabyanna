@@ -19,7 +19,7 @@ public class Hier {
   public String greeting(Model model, @RequestParam(required = true) String name) {
     model.addAttribute("name", name);
     model.addAttribute("greet", hellos[(int)myGreet.getId().getAndAdd(1)]);
-    model.addAttribute("color", "color: rgb(" + Math.random()*255 + ", " + Math.random()*255 + ", " + Math.random()*255 + ")");
+    model.addAttribute("color", "color: rgb(" + Math.random()*255 + ", " + Math.random()*255 + ", " + Math.random()*255 + ") ;font-size:" + Math.random()*40 + 10 + "px");
     return "hier";
   }
 }
