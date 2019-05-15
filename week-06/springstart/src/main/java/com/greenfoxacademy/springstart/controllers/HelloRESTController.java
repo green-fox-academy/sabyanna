@@ -13,7 +13,7 @@ public class HelloRESTController {
 
   @RequestMapping("/greeting")
   public Greeting greeting(@RequestParam(required = true) String name) {
-    
+
     myGreet.getId().getAndAdd(1);
     return myGreet;
 
