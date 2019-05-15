@@ -1,0 +1,48 @@
+OpenBGPD
+From Wikipedia, the free encyclopedia
+Jump to navigationJump to search
+OpenBGPD
+"Go ahead. Explore."
+"Go ahead. Explore."
+Developer(s)	The OpenBSD Project
+Stable release	
+6.5p0 / May 1, 2019; 6 days ago[1]
+Repository	
+openbsd.su/src/usr.sbin/bgpd/
+Edit this at Wikidata
+Written in	C
+Operating system	OpenBSD, FreeBSD
+Standard(s)	RFC 1997, RFC 2385, RFC 2545, RFC 2918, RFC 3765, RFC 4271, RFC 4360, RFC 4364, RFC 4456, RFC 4486, RFC 4760, RFC 4893, RFC 5082, RFC 5492, draft-ietf-idr-optional-transitive-00, draft-ietf-grow-mrt-17, RFC 6608
+Type	Border Gateway Protocol daemon
+License	ISC
+Website	www.openbgpd.org
+As of	May 2019
+OpenBGPD is a server software program that allows general purpose computers to be used as routers. It is a Unix system daemon that provides a free, open-source implementation of the Border Gateway Protocol version 4. This allows a machine to exchange routes with other systems that speak BGP.
+
+OpenBGPD is developed by Henning Brauer, Peter Hessler, and Claudio Jeker as part of the OpenBSD project. OpenOSPFD, developed by Esben Norby, is a companion daemon of OpenBGPD that implements the Open Shortest Path First protocol. The suite was developed as an alternative to packages such as Quagga, a Linux-focused routing suite which is licensed under the GPL and does not meet the project's requirements and quality standards.[2]
+
+
+Contents
+1	Goals
+2	Design
+3	See also
+4	References
+5	External links
+Goals
+The design goals of OpenBGPD include being secure (non-exploitable), reliable, and lean enough for most users, both in size and memory usage. The configuration language should be both powerful and easy to use. It must also be able to quickly handle hundreds of thousands of table entries in a memory-efficient way.
+
+Design
+OpenBGPD consists of a parent process, and two child processes: the Route Decision Engine (RDE), and the Session Engine (SE). The parent process is the only part that doesn't drop privileges; the others do, in the interest of non-exploitability. The parent process cannot drop privileges, because it needs to update the routing table and it has to run on a root port.
+
+See also
+	Free and open-source software portal
+List of open source routing platforms
+References
+ "Mirrors". Retrieved 1 May 2019.
+ A Secure BGP Implementation
+External links
+Official website Edit this at Wikidata
+bgpd(8) – OpenBSD System Manager's Manual
+A paper explaining OpenBGPD by Henning Brauer
+Hasso Tepper's work on OpenBGPD on Debian GNU/Linux
+Routing with OpenBSD using OpenOSPFD and OpenBGPD - Paper (pdf) by Claudio Jeker (2006)
