@@ -5,10 +5,9 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     </head>
     <body>
-
-
-        <tr th:each="greet: ${greets}">
-            <td th:text="${greet} + ' ' + '!'" />
-        </tr>
+        <tr th:each="greet: ${greets}" th:color="red">
+            <td th:text="${greet}"/>
+            <td th:text="${name} + ' ' + '!'"/>
+        <tr/>
     </body>
 </html>
