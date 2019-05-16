@@ -1,86 +1,75 @@
-body{
-    margin: 0;
-    background-color: #5089D5;
+body {
+    color: #5D6063;
+    background-color: #E9E6E6;
     font-family: 'Open Sans', sans-serif;
-}
-
-table {
-    border-radius:6px;
-    width: 40%;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-collapse: collapse;
-    box-shadow: 4px 6px 16px -4px rgba(0,0,0,0.53);
-}
-
-table th, table td {
-    text-align: left;
-    border-color: #C1C1C1;
-    border: 2px solid #C1C1C1;
-    padding-left: 15px;
-    margin: 0px;
-}
-
-table tr:first-child th {
-    border-top: 0;
-    
-}
-
-table tr:last-child td {
-    border-bottom: 0;
-}
-
-
-table tr td:first-child,
-table tr th:first-child {
-  border-left: 0;
-}
-
-table tr th:first-child{
-    border-top-left-radius: 3px;
-}
-
-table tr th:last-child {
-    border-top-right-radius: 3px;
-}
-
-table tr td:last-child,
-table tr th:last-child {
-  border-right: 0;
-}
-
-
-table tr:last-child td:last-child {
-     border-bottom-right-radius: 3px;
-}
-
-table tr:last-child td:first-child {
-     border-bottom-left-radius: 3px;
-}
-
-
-th {
-    color: aliceblue;
-    height: 50px;
-    background-color: #3E3E3E;
-    font-size: 18px;
-    
-}
-
-tr th {
-    border-bottom: 4px solid #ccc;
-}
-    
-tr {
-    color: #5F5F5F;
-    height: 40px;
-    background-color: #F0F0F0;
     font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-container {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    flex-direction: column;
+    margin: 40px 0;
+    padding: 50px;
+    border-radius: 5px;
+    
+}
+
+.account-login {
+    padding: 30px;
 }
     
-tr:nth-child(2n) {
-    background: white;
+
+
+label {
+    font-size: 11px;
+    padding: 30px 0px 10px 0px;
+
 }
-    
+
+.forgot {
+    font-size: 10px;
+    text-align: right;
+    padding: 0;
+}
+
+button {
+    background-color: #353535;
+    padding: 20px;
+    width: 100px;
+    border-radius: 30px;
+    border: 0;
+    color: azure;
+}
+
+input[type=text]:focus {
+  border: 1px solid darkgreen;
+}
+
+input[type=password]:focus {
+    border: 1px solid darkgreen;
+}
+
+input[type=password]{
+    background: url(eye2.png) no-repeat;
+    background-size: 5%;
+    background-position: 285px 15px;
+
+}
+
+
+input {
+  height: 50px;
+  padding: 0px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #F1F1F1;
+}
+
+
+
+
