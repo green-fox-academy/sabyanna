@@ -10,25 +10,31 @@
     </head>
 
     <body>
-        <form action="https://newsletter-ws.herokuapp.com/signup" method="post">
-            <div class="login-container">
-                <header class='account-login'>
-                    <h1>ACCOUNT LOGIN</h1>
+        <div class="container">
+            <form action=https://newsletter-ws.herokuapp.com/register method="post">
+                <header class='signUp'>
+                    <h1>Sign Up</h1>
                 </header>
 
-                <label for='username'>USERNAME</label>
-                <input id='username' name='username' type='text' autofocus/>
+                <input id='username' name='name' type='text' placeholder='Username' autofocus/>
 
-                <label for='password'>PASSWORD</label>
-                <input id='password' name='password' type='password'/>
+                <input id='email' name='email' type='email' placeholder='E-mail'/>
 
-                <div class="forgot">
-                    <p>Forgot Password?</p>
-                </div>
-                <button>Login</button>
+                <input id='password' name='password' type='password' placeholder='Password' />
+
+                <input id='password' name='passwordConfirmation' type='password' placeholder='Retype password'/>
+
+                <button type="submit">SIGN ME UP</button>
+            </form>
+            
+            <p class="or">OR</p>
+
+            <div class="social">
+                <p class="fb">Log in with Facebook</p>
+                <p class="twitter">Log in with Twitter</p>
+                <p class="google">Log in with Google+</p>
             </div>
-        </form>
-        
+        </div>
         
     </body>
     
