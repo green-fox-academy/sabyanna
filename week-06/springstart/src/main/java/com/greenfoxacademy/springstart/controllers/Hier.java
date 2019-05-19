@@ -23,6 +23,7 @@ public class Hier {
     return "hier";
   }
 }
-//rgb(0, 0, 224)
+//
+
 //<p style="color: red" th:text="${name} + '! ,'"/>
 //hellos[(int)myGreet.getId().getAndAdd(1)]

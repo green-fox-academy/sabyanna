@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
-    <head>
-        <title>Getting Started: Serving Web Content</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    </head>
-    <body>
-        <tr th:each="greet: ${greets}" th:color="red">
-            <td th:text="${greet}"/>
-            <td th:text="${name} + ' ' + '!'"/>
-        <tr/>
-    </body>
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<tr th:each="greet: ${greets}" th:color="red">
+    <td th:text="${greet}"/>
+    <td th:text="' ' + ${name} +  '!'"/>
+<tr/>
+</body>
 </html>
