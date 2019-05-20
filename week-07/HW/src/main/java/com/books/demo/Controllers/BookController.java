@@ -1,4 +1,4 @@
-package Controllers;
+package com.books.demo.Controllers;
 
 import com.books.demo.Book;
 import org.springframework.stereotype.Controller;
