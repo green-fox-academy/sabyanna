@@ -2,13 +2,14 @@ package com.lionking.bankaccount;
 
 public class BankAccount {
   private String name;
-  private int balance;
+  private float balance;
   private String animalType;
 
-  public BankAccount(String name, int balance, String animalType) {
+  public BankAccount(String name, float balance, String animalType) {
     this.name = name;
     this.balance = balance;
     this.animalType = animalType;
+
   }
 
   public String getName() {
@@ -19,11 +20,11 @@ public class BankAccount {
     this.name = name;
   }
 
-  public int getBalance() {
+  public float getBalance() {
     return balance;
   }
 
-  public void setBalance(int balance) {
+  public void setBalance(float balance) {
     this.balance = balance;
   }
 

@@ -17,6 +17,14 @@ public class HomeController {
     return "index";
   }
 
+  @RequestMapping("/weird")
+  public String weirdEnd(Model model) {
+    model.addAttribute("String", "This is an <em>HTML</em> text. <b>Enjoy yourself!</b>");
+    return "stringer";
+  }
+
+
+
 
 
 }

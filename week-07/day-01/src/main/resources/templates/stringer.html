@@ -7,7 +7,8 @@
 <body>
 
 <div>
-    <p th:text="|${account.name} has a balance of: ${#numbers.formatDecimal(account.balance, 1, 2)} Zebra, and is a: ${account.animalType}|"></p>
+    <p th:text="|${String}|"></p>
+    <p th:utext="|${String}|"></p>
 </div>
 
 </body>
