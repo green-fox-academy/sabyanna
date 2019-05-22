@@ -34,12 +34,26 @@ public class GreenFoxController {
   }
 
   @PostMapping("/gfa/save")
-  public String handlingForm(Model model,String name) {
+  public String handlingForm(Model model, String name) {
     studentService.save(name);
     model.addAttribute("students", studentService.findAll());
     return "list";
   }
 
+  @GetMapping("/gfa/check")
+  public String Check(Model model) {
+    return "check";
+  }
+
+  @PostMapping("/gfa/checked")
+  public String checkStudent(Model model, String name) {
+    if (studentService.findAll().contains(name)) {
+      model.addAttribute("text", name + " is already a user");
+    } else {
+      model.addAttribute("text", name + " is not a user");
+    }
+    return "checked";
+  }
 
 
 }
