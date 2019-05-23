@@ -87,12 +87,27 @@ public class HomeController {
   }
 
   @PostMapping("/learn")
-  public String email(Model model, String trick) {
+  public String Learn(Model model, String trick) {
     foxService.getFoxByName(currentFox).addToTricks(trick);
     model.addAttribute("text", foxService.getFoxByName(currentFox).describe());
     model.addAttribute("trickText", "Known tricks");
     model.addAttribute("tricks", foxService.getFoxByName(currentFox).getTricks());
+    return "redirect:/info?name=" + currentFox;
+  }
 
+  @GetMapping("/nutrition")
+  public String Nutrition(Model model) {
+    model.addAttribute("tricks", foxService.getFoxByName(currentFox).getPossibleTricks());
+    model.addAttribute("title", "Learn a new trick!");
+    return "learn";
+  }
+
+  @PostMapping("/nutrition")
+  public String Nutrition(Model model, String trick) {
+    foxService.getFoxByName(currentFox).addToTricks(trick);
+    model.addAttribute("text", foxService.getFoxByName(currentFox).describe());
+    model.addAttribute("trickText", "Known tricks");
+    model.addAttribute("tricks", foxService.getFoxByName(currentFox).getTricks());
     return "redirect:/info?name=" + currentFox;
   }
 }

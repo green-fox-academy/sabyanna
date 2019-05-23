@@ -11,16 +11,18 @@ import java.util.Random;
 public class FoxService {
   List<Fox> foxes;
   ArrayList<String> colors;
-  ArrayList<String> tricks;
+  //ArrayList<String> tricks;
+
 
   public FoxService() {
     colors = new ArrayList<>();
-    tricks = new ArrayList<>();
+    //tricks = new ArrayList<>();
     colors.add("red");
     colors.add("blue");
     colors.add("lime");
     colors.add("black");
     colors.add("pink");
+    /*
     tricks.add("play");
     tricks.add("inject dependencies");
     tricks.add("paint");
@@ -28,6 +30,8 @@ public class FoxService {
     tricks.add("handstand");
     tricks.add("cook");
     tricks.add("sleep");
+
+     */
     foxes = new ArrayList<>();
   }
 
@@ -62,13 +66,7 @@ public class FoxService {
     return getFoxByName(name) != null;
   }
 
-  public ArrayList<String> getTricks() {
-    return tricks;
-  }
 
-  public void setTricks(ArrayList<String> tricks) {
-    this.tricks = tricks;
-  }
 
 
 

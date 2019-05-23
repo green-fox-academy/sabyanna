@@ -11,11 +11,16 @@ public class Fox {
   private String drinks;
   private String color;
   private List<String> possibleTricks;
+  private List<String> possibleEats;
+  private List<String> possibleDrinks;
+
 
 
   public Fox(String name, String gender, String color) {
     tricks = new ArrayList<>();
     possibleTricks = new ArrayList<>();
+    possibleEats = new ArrayList<>();
+    possibleDrinks = new ArrayList<>();
     possibleTricks.add("play");
     possibleTricks.add("inject dependencies");
     possibleTricks.add("paint");
@@ -23,6 +28,15 @@ public class Fox {
     possibleTricks.add("handstand");
     possibleTricks.add("cook");
     possibleTricks.add("sleep");
+    possibleEats.add("watermelon");
+    possibleEats.add("dry bread");
+    possibleEats.add("cake");
+    possibleEats.add("pizza");
+    possibleDrinks.add("lemonade");
+    possibleDrinks.add("wine");
+    possibleDrinks.add("milkshake");
+    possibleDrinks.add("water");
+
     this.name = name;
     this.gender = gender;
     //this.eats = eats;
@@ -69,7 +83,9 @@ public class Fox {
   }
 
   public void setEats(String eats) {
+    possibleEats.add(eats);
     this.eats = eats;
+    possibleEats.remove(eats);
   }
 
   public String getDrinks() {
@@ -77,7 +93,9 @@ public class Fox {
   }
 
   public void setDrinks(String drinks) {
+    possibleDrinks.add(drinks);
     this.drinks = drinks;
+    possibleDrinks.remove(drinks);
   }
 
   public String getGender() {
