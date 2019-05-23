@@ -13,7 +13,7 @@ public class Fox {
   private List<String> possibleTricks;
   private List<String> possibleEats;
   private List<String> possibleDrinks;
-
+  private int fullness;
 
 
   public Fox(String name, String gender, String color) {
@@ -43,6 +43,7 @@ public class Fox {
     drinks = "water";
     //this.drinks = drinks;
     this.color = color;
+    fullness = 10;
   }
 
   public String getName() {
@@ -71,6 +72,10 @@ public class Fox {
   }
 
    */
+
+  public void setTricks(List<String> tricks) {
+    tricks = tricks;
+  }
 
   public void addToTricks(String trick) {
     tricks.add(trick);
@@ -103,10 +108,6 @@ public class Fox {
 
   public void setGender(String gender) {
     this.gender = gender;
-  }
-
-  public void setTricks(List<String> tricks) {
-    tricks = tricks;
   }
 
   public String describe() {
@@ -155,5 +156,17 @@ public class Fox {
 
   public void setPossibleDrinks(List<String> possibleDrinks) {
     this.possibleDrinks = possibleDrinks;
+  }
+
+  public int getFullness() {
+    return fullness;
+  }
+
+  public void setFullness(int fullness) {
+    this.fullness = fullness;
+  }
+
+  public void feed() {
+    fullness = 10;
   }
 }
