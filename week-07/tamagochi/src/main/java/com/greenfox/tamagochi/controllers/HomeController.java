@@ -26,6 +26,7 @@ public class HomeController {
 
   @GetMapping("/login")
   public String LogIn(Model model) {
+    model.addAttribute("title", "Welcome to the Fox Club");
     return "login";
   }
 
@@ -37,6 +38,7 @@ public class HomeController {
       model.addAttribute("text", foxService.getFoxByName(currentFox).describe());
       return "info";
     } else {
+      model.addAttribute("title", "Incorrect Fox name, please try again!");
       return "login";
     }
 
