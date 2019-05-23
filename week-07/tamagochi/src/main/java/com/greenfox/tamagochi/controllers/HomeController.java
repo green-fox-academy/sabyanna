@@ -68,14 +68,11 @@ public class HomeController {
 
   @GetMapping("/info")
   public String Info(Model model) {
+
     model.addAttribute("color", "/" + foxService.getFoxByName(currentFox).getColor() + ".png");
     model.addAttribute("text", foxService.getFoxByName(currentFox).describe());
-    if (foxService.getFoxByName(currentFox).getTricks().size()==0) {
-      model.addAttribute("trickText", "No tricks :(");
-    } else {
-      model.addAttribute("trickText", "Tricks:");
-      model.addAttribute("tricks", foxService.getFoxByName(currentFox).getTricks());
-    }
+    model.addAttribute("trickText", foxService.getFoxByName(currentFox).getTricks().size()==0);
+    model.addAttribute("tricks", foxService.getFoxByName(currentFox).getTricks());
     return "info";
   }
 

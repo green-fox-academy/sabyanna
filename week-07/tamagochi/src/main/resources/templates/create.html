@@ -3,7 +3,7 @@
 <head>
     <title>FoxClub</title>
     <link rel="stylesheet" th:href="@{/style.css}" />
-
+    <link rel="icon" href="/black.png">
     <meta charset="utf-8" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:700&display=swap" rel="stylesheet">
 </head>
@@ -13,7 +13,6 @@
         <a href="/info">
             <img src="/greenfoxlogo.png" alt="logo" class="logo">
         </a>
-
         <nav>
             <ul>
                 <li><a href='/login'>Login</a></li>
@@ -38,8 +37,6 @@
             <option th:value="He">boy</option>
         </select>
 
-
-
         <label>Shoe color</label>
         <select name ="color" th:type="text">
             <option th:each="color : ${colors}"
@@ -48,13 +45,8 @@
             ></option>
         </select>
         <button type="submit">GO</button>
-
     </form>
-
 </div>
-
-
-
 </body>
 </html>
 
