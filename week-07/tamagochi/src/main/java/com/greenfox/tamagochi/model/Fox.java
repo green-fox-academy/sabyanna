@@ -14,6 +14,10 @@ public class Fox {
   public Fox(String name, String gender, String color) {
     this.name = name;
     this.gender = gender;
+    //this.eats = eats;
+    eats = "dry bread";
+    drinks = "water";
+    //this.drinks = drinks;
     this.color = color;
   }
 
@@ -77,7 +81,11 @@ public class Fox {
   }
 
   public String describe() {
-    return "This is " + getName() + ". " + "Currently living on " + gender + " knows " + tricks.size() + "tricks.";
+    if (tricks.size() == 0) {
+      return "This is " + getName() + ". " + "Currently living on " + eats + " and " + drinks + ". " + gender + " knows no tricks yet.";
+    } else {
+      return "This is " + getName() + ". " + "Currently living on " + gender + " knows " + tricks.size() + " tricks.";
+    }
   }
 
   public String getColor() {

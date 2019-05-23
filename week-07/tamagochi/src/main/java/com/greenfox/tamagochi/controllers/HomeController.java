@@ -32,9 +32,9 @@ public class HomeController {
   @PostMapping("/login")
   public String LoggedIn(Model model, String name) {
     currentFox = name;
-
-    //model.addAttribute("text", name.describe());
-    return "login";
+    model.addAttribute("color", "/" + foxService.getFoxByName(currentFox).getColor() + ".png");
+    model.addAttribute("text", foxService.getFoxByName(currentFox).describe());
+    return "info";
   }
 
   @GetMapping("/create")
@@ -48,14 +48,15 @@ public class HomeController {
     currentFox = name;
     Fox newFox = new Fox(name, gender, color);
     foxService.addFox(newFox);
+    model.addAttribute("color", "/" + foxService.getFoxByName(currentFox).getColor() + ".png");
+    model.addAttribute("text", foxService.getFoxByName(currentFox).describe());
     return "info";
   }
 
   @GetMapping("/info")
-  public String Info(Model model, @RequestParam(required = true) String name) {
-    name = currentFox;
-    model.addAttribute("color", "/" + foxService.getFoxByName(name).getColor() + ".png");
-    model.addAttribute("text", foxService.getFoxByName(name).describe());
+  public String Info(Model model) {
+    model.addAttribute("color", "/" + foxService.getFoxByName(currentFox).getColor() + ".png");
+    model.addAttribute("text", foxService.getFoxByName(currentFox).describe());
     return "info";
   }
 }
