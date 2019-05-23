@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>FoxClub</title>
+    <link rel="stylesheet" th:href="@{/style.css}" />
+
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="container clearfix" >
+        <a href="/info">
+            <img src="/greenfoxlogo.png" alt="logo" class="logo">
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href='/login'>Login</a></li>
+                <li><a href='/create'>Create</a></li>
+                <li><a href='/info'>Information</a></li>
+                <li><a href=''>Nutrition Store</a></li>
+                <li><a href=''>Trick Center</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="box">
+    <h1> Welcome to Fox Club!</h1>
+    <h2> Create a new Fox</h2>
+    <form th:action="@{/create}" th:method="post">
+
+        <label for="name">The name of your Fox</label>
+        <input id='name' name='name' type='text' autofocus/>
+
+        <label for="gender">Gender</label>
+        <select id="gender" name='gender'>
+            <option th:value="she">girl</option>
+            <option th:value="he">boy</option>
+        </select>
+
+        <label>Shoe color</label>
+        <select name ="color" th:type="text">
+            <option th:each="color : ${colors}"
+                    th:value="${color}"
+                    th:text="${color}"
+            ></option>
+        </select>
+        <button type="submit">GO</button>
+
+    </form>
+
+</div>
+
+
+
+</body>
+</html>
+
+<!-- <img src="../static/greenfox.png" alt="logo" class="logo"> -->
+
+

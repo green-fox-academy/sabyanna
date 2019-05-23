@@ -1,0 +1,63 @@
+package com.greenfox.tamagochi.controllers;
+
+import com.greenfox.tamagochi.Service.FoxService;
+import com.greenfox.tamagochi.model.Fox;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+@Controller
+public class HomeController {
+
+  private FoxService foxService;
+  private String currentFox;
+
+  public HomeController(FoxService foxService) {
+    this.foxService = foxService;
+  }
+
+  @GetMapping("/")
+  public String Colored(Model model) {
+    return "welcome";
+  }
+
+  @GetMapping("/login")
+  public String LogIn(Model model) {
+    return "login";
+  }
+
+  @PostMapping("/login")
+  public String LoggedIn(Model model, String name) {
+    currentFox = name;
+
+    //model.addAttribute("text", name.describe());
+    return "login";
+  }
+
+  @GetMapping("/create")
+  public String Create(Model model) {
+    model.addAttribute("colors", foxService.getColors());
+    return "create";
+  }
+
+  @PostMapping("/create")
+  public String email(Model model, String name, String color, String gender) {
+    currentFox = name;
+    Fox newFox = new Fox(name, gender, color);
+    foxService.addFox(newFox);
+    return "info";
+  }
+
+  @GetMapping("/info")
+  public String Info(Model model, @RequestParam(required = true) String name) {
+    name = currentFox;
+    model.addAttribute("color", "/" + foxService.getFoxByName(name).getColor() + ".png");
+    model.addAttribute("text", foxService.getFoxByName(name).describe());
+    return "info";
+  }
+}
+
+
