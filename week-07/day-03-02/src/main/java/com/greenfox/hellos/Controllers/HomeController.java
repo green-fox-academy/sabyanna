@@ -46,7 +46,7 @@ public class HomeController {
 
   @GetMapping("/useful/decode")
   public String Decode(Model model, @RequestParam(required = true) String text, @RequestParam(required = true) int num) {
-    model.addAttribute("toWrite", utility.caesar(text, 0-num));
+    model.addAttribute("toWrite", utility.caesar(text, 0 - num));
     return "useful";
   }
 
