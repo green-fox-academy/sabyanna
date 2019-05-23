@@ -89,22 +89,25 @@ public class HomeController {
   @PostMapping("/learn")
   public String Learn(Model model, String trick) {
     foxService.getFoxByName(currentFox).addToTricks(trick);
-    model.addAttribute("text", foxService.getFoxByName(currentFox).describe());
     model.addAttribute("trickText", "Known tricks");
+    model.addAttribute("text", foxService.getFoxByName(currentFox).describe());
     model.addAttribute("tricks", foxService.getFoxByName(currentFox).getTricks());
     return "redirect:/info?name=" + currentFox;
   }
 
   @GetMapping("/nutrition")
   public String Nutrition(Model model) {
-    model.addAttribute("tricks", foxService.getFoxByName(currentFox).getPossibleTricks());
-    model.addAttribute("title", "Learn a new trick!");
-    return "learn";
+    model.addAttribute("foods", foxService.getFoxByName(currentFox).getPossibleEats());
+    model.addAttribute("drinks", foxService.getFoxByName(currentFox).getPossibleDrinks());
+    model.addAttribute("foodTitle", "What to eat?");
+    model.addAttribute("drinkTitle", "What to drink?");
+    return "nutrition";
   }
 
   @PostMapping("/nutrition")
-  public String Nutrition(Model model, String trick) {
-    foxService.getFoxByName(currentFox).addToTricks(trick);
+  public String Nutrition(Model model, String food, String drink) {
+    foxService.getFoxByName(currentFox).setEats(food);
+    foxService.getFoxByName(currentFox).setDrinks(drink);
     model.addAttribute("text", foxService.getFoxByName(currentFox).describe());
     model.addAttribute("trickText", "Known tricks");
     model.addAttribute("tricks", foxService.getFoxByName(currentFox).getTricks());

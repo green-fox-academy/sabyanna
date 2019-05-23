@@ -36,7 +36,6 @@ public class Fox {
     possibleDrinks.add("wine");
     possibleDrinks.add("milkshake");
     possibleDrinks.add("water");
-
     this.name = name;
     this.gender = gender;
     //this.eats = eats;
@@ -82,20 +81,20 @@ public class Fox {
     return eats;
   }
 
-  public void setEats(String eats) {
+  public void setEats(String newEats) {
     possibleEats.add(eats);
-    this.eats = eats;
-    possibleEats.remove(eats);
+    eats = newEats;
+    possibleEats.remove(newEats);
   }
 
   public String getDrinks() {
     return drinks;
   }
 
-  public void setDrinks(String drinks) {
+  public void setDrinks(String newDrinks) {
     possibleDrinks.add(drinks);
-    this.drinks = drinks;
-    possibleDrinks.remove(drinks);
+    drinks = newDrinks;
+    possibleDrinks.remove(newDrinks);
   }
 
   public String getGender() {
@@ -114,7 +113,7 @@ public class Fox {
     if (tricks.size() == 0) {
       return "This is " + getName() + ". " + "Currently living on " + eats + " and " + drinks + ". " + gender + " knows no tricks yet.";
     } else {
-      return "This is " + getName() + ". " + "Currently living on " + gender + " knows " + tricks.size() + " tricks.";
+      return "This is " + getName() + ". " + "Currently living on " + eats + " and " + drinks + ". " + gender + " knows " + tricks.size() + " tricks.";
     }
   }
 
@@ -140,5 +139,21 @@ public class Fox {
 
   public void setPossibleTricks(List<String> possibleTricks) {
     this.possibleTricks = possibleTricks;
+  }
+
+  public List<String> getPossibleEats() {
+    return possibleEats;
+  }
+
+  public void setPossibleEats(List<String> possibleEats) {
+    this.possibleEats = possibleEats;
+  }
+
+  public List<String> getPossibleDrinks() {
+    return possibleDrinks;
+  }
+
+  public void setPossibleDrinks(List<String> possibleDrinks) {
+    this.possibleDrinks = possibleDrinks;
   }
 }
