@@ -31,10 +31,15 @@ public class HomeController {
 
   @PostMapping("/login")
   public String LoggedIn(Model model, String name) {
-    currentFox = name;
-    model.addAttribute("color", "/" + foxService.getFoxByName(currentFox).getColor() + ".png");
-    model.addAttribute("text", foxService.getFoxByName(currentFox).describe());
-    return "info";
+    if (foxService.isThere(name)) {
+      currentFox = name;
+      model.addAttribute("color", "/" + foxService.getFoxByName(currentFox).getColor() + ".png");
+      model.addAttribute("text", foxService.getFoxByName(currentFox).describe());
+      return "info";
+    } else {
+      return "login";
+    }
+
   }
 
   @GetMapping("/create")

@@ -17,7 +17,7 @@ public class FoxService {
     colors.add("red");
     colors.add("blue");
     colors.add("lime");
-    colors.add("orange");
+    colors.add("black");
     colors.add("pink");
     foxes = new ArrayList<>();
   }
@@ -43,12 +43,15 @@ public class FoxService {
   }
 
   public Fox getFoxByName(String name) {
-    Fox outputFox = foxes.stream()
-            .filter(fox -> fox.getName() == name)
+    return foxes.stream()
+            .filter(fox -> fox.getName().equals(name))
             .findAny()
             .orElse(null);
-    return outputFox;
 
+  }
+
+  public boolean isThere(String name) {
+    return getFoxByName(name) != null;
   }
 
 
