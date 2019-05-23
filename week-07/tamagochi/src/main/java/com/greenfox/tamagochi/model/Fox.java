@@ -6,12 +6,23 @@ import java.util.List;
 public class Fox {
   private String name;
   private String gender;
-  private List<String> tricks = new ArrayList<>();
+  private List<String> tricks;
   private String eats;
   private String drinks;
   private String color;
+  private List<String> possibleTricks;
+
 
   public Fox(String name, String gender, String color) {
+    tricks = new ArrayList<>();
+    possibleTricks = new ArrayList<>();
+    possibleTricks.add("play");
+    possibleTricks.add("inject dependencies");
+    possibleTricks.add("paint");
+    possibleTricks.add("snore");
+    possibleTricks.add("handstand");
+    possibleTricks.add("cook");
+    possibleTricks.add("sleep");
     this.name = name;
     this.gender = gender;
     //this.eats = eats;
@@ -50,6 +61,7 @@ public class Fox {
 
   public void addToTricks(String trick) {
     tricks.add(trick);
+    possibleTricks.remove(trick);
   }
 
   public String getEats() {
@@ -94,5 +106,21 @@ public class Fox {
 
   public void setColor(String color) {
     this.color = color;
+  }
+
+  public void learnTrick(String trick) {
+    tricks.add(trick);
+  }
+
+  public boolean isThereTrick(String name) {
+    return tricks.contains(name);
+  }
+
+  public List<String> getPossibleTricks() {
+    return possibleTricks;
+  }
+
+  public void setPossibleTricks(List<String> possibleTricks) {
+    this.possibleTricks = possibleTricks;
   }
 }

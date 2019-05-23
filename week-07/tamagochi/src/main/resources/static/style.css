@@ -1,9 +1,9 @@
-body{
+body {
     margin: 0;
     background-color: white;
     font-family: 'Open Sans', sans-serif;
     color: #3C3C3B;
-    
+
 }
 
 .container {
@@ -24,27 +24,27 @@ header {
 
 
 .clearfix:after {
-    clear:both;
+    clear: both;
 }
 
 
-.logo{
+.logo {
     float: left;
     padding: 10px 0;
     width: 20%;
 }
 
-nav{
+nav {
     float: right;
-} 
+}
 
-nav ul{
+nav ul {
     margin: 20px 0;
     padding: 0;
     list-style: none;
 }
 
-nav li{
+nav li {
     display: inline-block;
     margin-left: 20px;
     padding-top: 15px;
@@ -52,7 +52,7 @@ nav li{
 
 }
 
-nav a{
+nav a {
     font-family: 'Open Sans', sans-serif;
     color: #3C3C3B;
     text-transform: uppercase;
@@ -60,12 +60,12 @@ nav a{
 
 }
 
-nav a:hover{
+nav a:hover {
     color: black;
 }
 
 
-nav a::before{
+nav a::before {
     content: '';
     display: block;
     height: 3px;
@@ -78,7 +78,7 @@ nav a::before{
 }
 
 
-nav a:hover::before{
+nav a:hover::before {
     width: 100%;
 }
 
@@ -94,4 +94,14 @@ nav a:hover::before{
 
 .welcome {
     font-size: 50px;
+}
+
+select, input {
+    height: 30px;
+    min-width: 100px;
+    padding: 0px;
+}
+
+button {
+    border-radius: 3px;
 }

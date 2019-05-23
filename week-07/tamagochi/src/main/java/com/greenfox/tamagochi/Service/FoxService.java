@@ -11,14 +11,23 @@ import java.util.Random;
 public class FoxService {
   List<Fox> foxes;
   ArrayList<String> colors;
+  ArrayList<String> tricks;
 
   public FoxService() {
     colors = new ArrayList<>();
+    tricks = new ArrayList<>();
     colors.add("red");
     colors.add("blue");
     colors.add("lime");
     colors.add("black");
     colors.add("pink");
+    tricks.add("play");
+    tricks.add("inject dependencies");
+    tricks.add("paint");
+    tricks.add("snore");
+    tricks.add("handstand");
+    tricks.add("cook");
+    tricks.add("sleep");
     foxes = new ArrayList<>();
   }
 
@@ -47,12 +56,20 @@ public class FoxService {
             .filter(fox -> fox.getName().equals(name))
             .findAny()
             .orElse(null);
-
   }
 
-  public boolean isThere(String name) {
+  public boolean isThereFox(String name) {
     return getFoxByName(name) != null;
   }
+
+  public ArrayList<String> getTricks() {
+    return tricks;
+  }
+
+  public void setTricks(ArrayList<String> tricks) {
+    this.tricks = tricks;
+  }
+
 
 
 

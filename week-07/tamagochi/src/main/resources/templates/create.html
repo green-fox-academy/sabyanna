@@ -19,15 +19,14 @@
                 <li><a href='/login'>Login</a></li>
                 <li><a href='/create'>Create</a></li>
                 <li><a href='/info'>Information</a></li>
-                <li><a href=''>Nutrition Store</a></li>
-                <li><a href=''>Trick Center</a></li>
+                <li><a href='/nutrition'>Nutrition Store</a></li>
+                <li><a href='/learn'>Trick Center</a></li>
             </ul>
         </nav>
     </div>
 </header>
 <div class="box">
-    <h1> Welcome to Fox Club!</h1>
-    <h2> Create a new Fox</h2>
+    <h1 th:text="${title}"></h1>
     <form th:action="@{/create}" th:method="post">
 
         <label for="name">The name of your Fox</label>

@@ -20,8 +20,8 @@
                     <li><a href='/login'>Login</a></li>
                     <li><a href='/create'>Create</a></li>
                     <li><a href='/info'>Information</a></li>
-                    <li><a href=''>Nutrition Store</a></li>
-                    <li><a href=''>Trick Center</a></li>>
+                    <li><a href='/nutrition'>Nutrition Store</a></li>
+                    <li><a href='/learn'>Trick Center</a></li>
                 </ul>
             </nav>
         </div>
@@ -29,11 +29,13 @@
     <div class="box">
         <img th:src="${color}" alt="logo" class="logo">
         <p th:text="${text}"></p>
-        <h1>Known tricks</h1>
+
+        <h1 th:text="${trickText}"></h1>
         <ul>
-            <li>write HTML</li>
-            <li>code in Java</li>
+            <li th:each="trick : ${tricks}"
+                th:text="${trick}"></li>
         </ul>
+
     </div>
     
     
