@@ -11,6 +11,7 @@ import java.util.Random;
 public class FoxService {
   List<Fox> foxes;
   ArrayList<String> colors;
+  ArrayList<String> log = new ArrayList<>();;
   //ArrayList<String> tricks;
 
 
@@ -49,6 +50,18 @@ public class FoxService {
 
   public void setColors(ArrayList<String> colors) {
     this.colors = colors;
+  }
+
+  public ArrayList<String> getLog() {
+    return log;
+  }
+
+  public void setLog(ArrayList<String> log) {
+    this.log = log;
+  }
+
+  public void addLog(String logItem) {
+    log.add(logItem);
   }
 
   public void addFox(Fox fox){
