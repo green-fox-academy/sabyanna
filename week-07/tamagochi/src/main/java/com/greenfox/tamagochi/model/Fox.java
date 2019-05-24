@@ -14,6 +14,7 @@ public class Fox {
   private List<String> possibleEats;
   private List<String> possibleDrinks;
   private int fullness;
+  pri
 
 
   public Fox(String name, String gender, String color) {
@@ -177,13 +178,5 @@ public class Fox {
 
   public void feed() {
     fullness = 10;
-  }
-
-  public List putAtFirs(List list, String element) {
-    List<String> outputList = new ArrayList<>();
-    outputList.add(element);
-    list.stream()
-            .forEach(x -> outputList.add(x.toString()));
-    return outputList;
   }
 }

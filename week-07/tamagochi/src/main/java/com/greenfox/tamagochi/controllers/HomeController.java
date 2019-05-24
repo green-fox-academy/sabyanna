@@ -94,7 +94,8 @@ public class HomeController {
     model.addAttribute("foxTest", foxService.getFoxes().size()!=0 );
     model.addAttribute("foxName", currentFox);
     model.addAttribute("tricks", foxService.getFoxByName(currentFox).getPossibleTricks());
-    model.addAttribute("title", "Learn a new trick!");
+    //model.addAttribute("title", "Learn a new trick!");
+    model.addAttribute("trickTest", foxService.getFoxByName(currentFox).getPossibleTricks().size() != 0);
     return "learn";
   }
 
@@ -122,14 +123,16 @@ public class HomeController {
 
   @PostMapping("/nutrition")
   public String Nutrition(Model model, String food, String drink) {
-    model.addAttribute("foxTest", foxService.getFoxes().size()!=0 );
-    model.addAttribute("foxName", currentFox);
     foxService.getFoxByName(currentFox).setEats(food);
     foxService.getFoxByName(currentFox).setDrinks(drink);
+    foxService.getFoxByName(currentFox).feed();
+    model.addAttribute("foxTest", foxService.getFoxes().size()!=0 );
+    model.addAttribute("foxName", currentFox);
     model.addAttribute("text", foxService.getFoxByName(currentFox).describe());
     model.addAttribute("trickText", "Known tricks");
     model.addAttribute("tricks", foxService.getFoxByName(currentFox).getTricks());
     model.addAttribute("fulltext", foxService.getFoxByName(currentFox).getFullness());
+
     return "redirect:/info?name=" + currentFox;
   }
 }
