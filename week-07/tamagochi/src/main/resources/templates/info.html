@@ -19,9 +19,9 @@
                 <ul>
                     <li><a href='/login'>Login</a></li>
                     <li><a href='/create'>Create</a></li>
-                    <li><a href='/info'>Information</a></li>
-                    <li><a href='/nutrition'>Nutrition Store</a></li>
+                    <li><a href='/nutrition'>Food</a></li>
                     <li><a href='/learn'>Trick Center</a></li>
+                    <li><a href='/info' th:if="${foxTest}" th:text="${foxName}"></a></li>
                 </ul>
             </nav>
         </div>
@@ -30,12 +30,15 @@
         <img th:src="${color}" alt="logo" class="logo">
         <p th:text="${text}"></p>
 
+        <h2>Fullness: </h2><p th:text="${fulltext}"></p>
+
         <h1 th:text="${trickText} ? 'No tricks :(' : 'Tricks:'" ></h1>
 
         <ul>
             <li th:each="trick : ${tricks}"
                 th:text="${trick}"></li>
         </ul>
+
 
     </div>
     

@@ -7,6 +7,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import javax.xml.stream.events.Attribute;
+import java.util.jar.Attributes;
+
 @Controller
 public class HomeController {
 
@@ -19,12 +22,17 @@ public class HomeController {
 
   @GetMapping("/")
   public String Colored(Model model) {
+    model.addAttribute("foxTest", foxService.getFoxes().size()!=0 );
+    model.addAttribute("foxName", currentFox);
+    model.addAttribute("title", foxService.getFoxes().size()==0 );
     model.addAttribute("title", "Please log in!");
     return "login";
   }
 
   @GetMapping("/login")
   public String LogIn(Model model) {
+    model.addAttribute("foxTest", foxService.getFoxes().size()!=0 );
+    model.addAttribute("foxName", currentFox);
     model.addAttribute("title", "Please log in!");
     return "login";
   }
@@ -35,6 +43,7 @@ public class HomeController {
       currentFox = name;
       model.addAttribute("color", "/" + foxService.getFoxByName(name).getColor() + ".png");
       model.addAttribute("text", foxService.getFoxByName(name).describe());
+      model.addAttribute("fulltext", foxService.getFoxByName(currentFox).getFullness());
       return "redirect:/info?name=" + name;
     } else {
       model.addAttribute("title", "Incorrect Fox name, please try again!");
@@ -44,40 +53,46 @@ public class HomeController {
 
   @GetMapping("/create")
   public String Create(Model model) {
+    model.addAttribute("foxTest", foxService.getFoxes().size()!=0 );
+    model.addAttribute("foxName", currentFox);
     model.addAttribute("colors", foxService.getColors());
     model.addAttribute("title", "Create a new fox!");
     return "create";
   }
 
   @PostMapping("/create")
-  public String email(Model model, String name, String color, String gender) {
+  public String Create(Model model, String name, String color, String gender) {
     if (!foxService.isThereFox(name)) {
       currentFox = name;
       Fox newFox = new Fox(name, gender, color);
       foxService.addFox(newFox);
       model.addAttribute("color", "/" + foxService.getFoxByName(currentFox).getColor() + ".png");
       model.addAttribute("text", foxService.getFoxByName(currentFox).describe());
+      model.addAttribute("fulltext", foxService.getFoxByName(currentFox).getFullness());
       return "redirect:/info?name=" + name;
     } else {
       model.addAttribute("colors", foxService.getColors());
       model.addAttribute("title", "There is already a fox with that name, please choose a different one!");
       return "create";
     }
-
   }
 
   @GetMapping("/info")
   public String Info(Model model) {
-
+    model.addAttribute("foxTest", foxService.getFoxes().size()!=0 );
+    model.addAttribute("foxName", currentFox);
     model.addAttribute("color", "/" + foxService.getFoxByName(currentFox).getColor() + ".png");
     model.addAttribute("text", foxService.getFoxByName(currentFox).describe());
     model.addAttribute("trickText", foxService.getFoxByName(currentFox).getTricks().size()==0);
     model.addAttribute("tricks", foxService.getFoxByName(currentFox).getTricks());
+    model.addAttribute("fulltext", foxService.getFoxByName(currentFox).getFullness());
     return "info";
   }
 
   @GetMapping("/learn")
   public String Learn(Model model) {
+    model.addAttribute("foxTest", foxService.getFoxes().size()!=0 );
+    model.addAttribute("foxName", currentFox);
     model.addAttribute("tricks", foxService.getFoxByName(currentFox).getPossibleTricks());
     model.addAttribute("title", "Learn a new trick!");
     return "learn";
@@ -89,11 +104,15 @@ public class HomeController {
     model.addAttribute("trickText", "Known tricks");
     model.addAttribute("text", foxService.getFoxByName(currentFox).describe());
     model.addAttribute("tricks", foxService.getFoxByName(currentFox).getTricks());
+    model.addAttribute("fulltext", foxService.getFoxByName(currentFox).getFullness());
     return "redirect:/info?name=" + currentFox;
   }
 
   @GetMapping("/nutrition")
   public String Nutrition(Model model) {
+    model.addAttribute("foxTest", foxService.getFoxes().size()!=0 );
+    model.addAttribute("foxName", currentFox);
+    model.addAttribute("currentDrink", foxService.getFoxByName(currentFox).getDrinks());
     model.addAttribute("foods", foxService.getFoxByName(currentFox).getPossibleEats());
     model.addAttribute("drinks", foxService.getFoxByName(currentFox).getPossibleDrinks());
     model.addAttribute("foodTitle", "What to eat?");
@@ -103,11 +122,14 @@ public class HomeController {
 
   @PostMapping("/nutrition")
   public String Nutrition(Model model, String food, String drink) {
+    model.addAttribute("foxTest", foxService.getFoxes().size()!=0 );
+    model.addAttribute("foxName", currentFox);
     foxService.getFoxByName(currentFox).setEats(food);
     foxService.getFoxByName(currentFox).setDrinks(drink);
     model.addAttribute("text", foxService.getFoxByName(currentFox).describe());
     model.addAttribute("trickText", "Known tricks");
     model.addAttribute("tricks", foxService.getFoxByName(currentFox).getTricks());
+    model.addAttribute("fulltext", foxService.getFoxByName(currentFox).getFullness());
     return "redirect:/info?name=" + currentFox;
   }
 }

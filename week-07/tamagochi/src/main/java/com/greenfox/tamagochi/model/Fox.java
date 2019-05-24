@@ -28,14 +28,14 @@ public class Fox {
     possibleTricks.add("handstand");
     possibleTricks.add("cook");
     possibleTricks.add("sleep");
-    possibleEats.add("watermelon");
     possibleEats.add("dry bread");
+    possibleEats.add("watermelon");
     possibleEats.add("cake");
     possibleEats.add("pizza");
+    possibleDrinks.add("water");
     possibleDrinks.add("lemonade");
     possibleDrinks.add("wine");
     possibleDrinks.add("milkshake");
-    possibleDrinks.add("water");
     this.name = name;
     this.gender = gender;
     //this.eats = eats;
@@ -80,6 +80,7 @@ public class Fox {
   public void addToTricks(String trick) {
     tricks.add(trick);
     possibleTricks.remove(trick);
+    fullness -= 1;
   }
 
   public String getEats() {
@@ -87,9 +88,13 @@ public class Fox {
   }
 
   public void setEats(String newEats) {
-    possibleEats.add(eats);
-    eats = newEats;
     possibleEats.remove(newEats);
+    List<String> outputList = new ArrayList<>();
+    outputList.add(newEats);
+    possibleEats.stream()
+            .forEach(x -> outputList.add(x.toString()));
+    possibleEats = outputList;
+    eats = newEats;
   }
 
   public String getDrinks() {
@@ -97,9 +102,13 @@ public class Fox {
   }
 
   public void setDrinks(String newDrinks) {
-    possibleDrinks.add(drinks);
-    drinks = newDrinks;
     possibleDrinks.remove(newDrinks);
+    List<String> outputList = new ArrayList<>();
+    outputList.add(newDrinks);
+    possibleDrinks.stream()
+            .forEach(x -> outputList.add(x.toString()));
+    possibleDrinks = outputList;
+    drinks = newDrinks;
   }
 
   public String getGender() {
@@ -168,5 +177,13 @@ public class Fox {
 
   public void feed() {
     fullness = 10;
+  }
+
+  public List putAtFirs(List list, String element) {
+    List<String> outputList = new ArrayList<>();
+    outputList.add(element);
+    list.stream()
+            .forEach(x -> outputList.add(x.toString()));
+    return outputList;
   }
 }

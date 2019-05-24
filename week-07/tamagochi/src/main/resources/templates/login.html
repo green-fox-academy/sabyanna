@@ -18,9 +18,9 @@
             <ul>
                 <li><a href='/login'>Login</a></li>
                 <li><a href='/create'>Create</a></li>
-                <li><a href='/info'>Information</a></li>
-                <li><a href='/nutrition'>Nutrition Store</a></li>
+                <li><a href='/nutrition'>Food</a></li>
                 <li><a href='/learn'>Trick Center</a></li>
+                <li><a href='/info' th:if="${foxTest}" th:text="${foxName}"></a></li>
             </ul>
         </nav>
     </div>
