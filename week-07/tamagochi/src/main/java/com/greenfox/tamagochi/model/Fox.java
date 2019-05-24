@@ -14,7 +14,7 @@ public class Fox {
   private List<String> possibleEats;
   private List<String> possibleDrinks;
   private int fullness;
-  pri
+  private boolean isAlive;
 
 
   public Fox(String name, String gender, String color) {
@@ -45,6 +45,7 @@ public class Fox {
     //this.drinks = drinks;
     this.color = color;
     fullness = 10;
+    isAlive = true;
   }
 
   public String getName() {
@@ -58,21 +59,6 @@ public class Fox {
   public List<String> getTricks() {
     return tricks;
   }
-  /*
-
-  public String listTricks() {
-    StringBuilder output = new StringBuilder();
-    if (tricks.size() == 1) {
-      output.append(tricks.get(1));
-    } else {
-      for (String trick : tricks) {
-        output.append(", " + trick);
-      }
-    }
-    return output.toString();
-  }
-
-   */
 
   public void setTricks(List<String> tricks) {
     tricks = tricks;
@@ -81,7 +67,10 @@ public class Fox {
   public void addToTricks(String trick) {
     tricks.add(trick);
     possibleTricks.remove(trick);
-    fullness -= 1;
+    fullness -= 3;
+    if (fullness <= 0) {
+      isAlive = false;
+    }
   }
 
   public String getEats() {
@@ -174,6 +163,14 @@ public class Fox {
 
   public void setFullness(int fullness) {
     this.fullness = fullness;
+  }
+
+  public boolean isAlive() {
+    return isAlive;
+  }
+
+  public void setAlive(boolean alive) {
+    isAlive = alive;
   }
 
   public void feed() {
