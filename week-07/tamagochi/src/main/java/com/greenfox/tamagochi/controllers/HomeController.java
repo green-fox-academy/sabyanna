@@ -139,14 +139,15 @@ public class HomeController {
     model.addAttribute("trickText", "Known tricks");
     model.addAttribute("tricks", foxService.getFoxByName(currentFox).getTricks());
     model.addAttribute("fulltext", foxService.getFoxByName(currentFox).getFullness());
+    //model.addAttribute("name", foxService.getFoxByName(currentFox).getFullness());
     foxService.addLog("Fox fed");
     return "redirect:/info?name=" + currentFox;
   }
 
   @GetMapping("/actions")
-  public String Actions(@RequestParam String name, Model model) {
+  public String Actions(Model model) {
     model.addAttribute("foxTest", foxService.getFoxes().size() != 0);
-    model.addAttribute("foxName", name);
+
     model.addAttribute("title", "Create a new fox!");
     model.addAttribute("logs", foxService.getLog());
     return "actions";
