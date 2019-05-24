@@ -11,28 +11,18 @@ import java.util.Random;
 public class FoxService {
   List<Fox> foxes;
   ArrayList<String> colors;
-  ArrayList<String> log = new ArrayList<>();;
+  ArrayList<String> log = new ArrayList<>();
+  private String currentFox;
   //ArrayList<String> tricks;
 
 
   public FoxService() {
     colors = new ArrayList<>();
-    //tricks = new ArrayList<>();
     colors.add("red");
     colors.add("blue");
     colors.add("lime");
     colors.add("black");
     colors.add("pink");
-    /*
-    tricks.add("play");
-    tricks.add("inject dependencies");
-    tricks.add("paint");
-    tricks.add("snore");
-    tricks.add("handstand");
-    tricks.add("cook");
-    tricks.add("sleep");
-
-     */
     foxes = new ArrayList<>();
   }
 
@@ -79,9 +69,11 @@ public class FoxService {
     return getFoxByName(name) != null;
   }
 
+  public String getCurrentFox() {
+    return currentFox;
+  }
 
-
-
-
-
+  public void setCurrentFox(String currentFox) {
+    this.currentFox = currentFox;
+  }
 }
