@@ -18,10 +18,10 @@
             <ul>
                 <li><a th:href="@{/login(name= ${foxName})}">Login</a></li>
                 <li><a th:href="@{/create(name= ${foxName})}">Create</a></li>
-                <li><a href='/actions'>Actions</a></li>
+                <li><a th:href="@{/actions(name= ${foxName})}">Actions</a></li>
                 <li th:if="${foxTest}"><a th:href="@{/nutrition(name= ${foxName})}">Food</a></li>
                 <li th:if="${foxTest}"><a th:href="@{/learn(name= ${foxName})}">Trick Center</a></li>
-                <li th:if="${foxTest}"><a th:href="@{/info(name= ${foxName})}"></a></li>
+                <li th:if="${foxTest}"><a th:href="@{/info(name= ${foxName})}" th:text="${foxName}" ></a></li>
             </ul>
         </nav>
     </div>

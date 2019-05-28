@@ -21,7 +21,7 @@ public class NutritionController {
   }
 
   @GetMapping("/nutrition")
-  public String Nutrition(@RequestParam String name, Model model) {
+  public String Nutrition(@RequestParam(required = false) String name, Model model) {
     model.addAttribute("foxTest", foxService.getFoxes().size() != 0);
     model.addAttribute("foxName", name);
     model.addAttribute("currentDrink", foxService.getFoxByName(name).getDrinks());

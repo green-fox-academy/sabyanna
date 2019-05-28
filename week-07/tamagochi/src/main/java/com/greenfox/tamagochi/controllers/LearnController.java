@@ -21,7 +21,7 @@ public class LearnController {
   }
 
   @GetMapping("/learn")
-  public String Learn(@RequestParam String name, Model model) {
+  public String Learn(@RequestParam(required = false) String name, Model model) {
     model.addAttribute("foxTest", foxService.getFoxes().size() != 0);
     model.addAttribute("foxName", name);
     model.addAttribute("tricks", foxService.getFoxByName(name).getPossibleTricks());
@@ -33,6 +33,7 @@ public class LearnController {
   @PostMapping("/learn")
   public String Learn(String name, Model model, String trick) {
     foxService.getFoxByName(name).addToTricks(trick);
+    model.addAttribute("foxTest", foxService.getFoxes().size() != 0);
     model.addAttribute("trickText", "Known tricks");
     model.addAttribute("text", foxService.getFoxByName(name).describe());
     model.addAttribute("tricks", foxService.getFoxByName(name).getTricks());

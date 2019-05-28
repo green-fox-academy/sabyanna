@@ -21,10 +21,11 @@ public class ActionController {
   }
 
   @GetMapping("/actions")
-  public String Actions(Model model) {
+  public String Actions(Model model, @RequestParam(required = false) String name) {
     model.addAttribute("foxTest", foxService.getFoxes().size() != 0);
     model.addAttribute("title", "Create a new fox!");
     model.addAttribute("logs", foxService.getLog());
+    model.addAttribute("foxName", name);
     return "actions";
   }
 }
