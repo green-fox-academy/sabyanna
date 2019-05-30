@@ -32,7 +32,6 @@ public class TodoServiceImp implements ITodoService {
   @Override
   public void save(Todo todo) {
     todoRepository.save(todo);
-
   }
 
   @Override
