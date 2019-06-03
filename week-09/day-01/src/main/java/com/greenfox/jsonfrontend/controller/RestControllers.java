@@ -1,6 +1,8 @@
 package com.greenfox.jsonfrontend.controller;
 
 import com.greenfox.jsonfrontend.model.*;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -46,10 +48,10 @@ public class RestControllers {
    */
 
   @PostMapping("/dountil/{action}")
-  public Object doUntil(@PathVariable("action") String operation, @RequestParam(required = false) int until) {
-    if (operation.equals("sum") || operation.equals("factor") ) {
-      return new DoUntil(operation, until);
-    } return "404";
+  public ResponseEntity<?> doUntil(@PathVariable("action") String operation, @RequestBody UntilInput untilInput) {
+    if (untilInput != null) {
+      return new ResponseEntity<DoUntil>(new DoUntil(operation, untilInput.getUntil()), HttpStatus.OK);
+    } return new ResponseEntity<ErrorResponse>(new ErrorResponse(4), HttpStatus.BAD_REQUEST);
   }
 
 

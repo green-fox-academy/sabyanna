@@ -9,16 +9,26 @@ public class DoUntil {
   private int result;
 
   public DoUntil(String math, int untilNum) {
-    result = 1;
     if (math.equals("sum")) {
-      for (int i = 2; i <= untilNum; i++) {
-        result += i;
-      }
+      result = getSum(untilNum);
     } else {
-      for (int i = 2; i <= untilNum; i++) {
-        result *= i;
-      }
+      result = getFactor(untilNum);
     }
+  }
 
+  public int getSum(int until) {
+    result = 1;
+    for (int i = 2; i <= until; i++) {
+      result += i;
+    }
+    return result;
+  }
+
+  public int getFactor(int until) {
+    result = 1;
+    for (int i = 2; i <= until; i++) {
+      result *= i;
+    }
+    return result;
   }
 }
