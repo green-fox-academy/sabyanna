@@ -54,6 +54,13 @@ public class RestControllers {
     } return new ResponseEntity<ErrorResponse>(new ErrorResponse(4), HttpStatus.BAD_REQUEST);
   }
 
+  @PostMapping("/arrays")
+  public ResponseEntity<?> handleArrays(@RequestBody ArrayInput arrayInput) {
+    if (arrayInput != null) {
+      return new ResponseEntity<HandleArray>(new HandleArray(arrayInput.getWhat(), arrayInput.getNumbers()), HttpStatus.OK);
+    } return new ResponseEntity<ErrorResponse>(new ErrorResponse(4), HttpStatus.BAD_REQUEST);
+  }
+
 
 
 

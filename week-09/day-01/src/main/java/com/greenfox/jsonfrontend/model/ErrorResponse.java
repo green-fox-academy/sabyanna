@@ -20,6 +20,8 @@ public class ErrorResponse {
       error = "Please provide a name!";
     } else if (test == 4) {
       error = "Please provide a number!";
+    } else if (test == 5) {
+      error = "Please provide what to do with the numbers!";
     }
   }
 }
