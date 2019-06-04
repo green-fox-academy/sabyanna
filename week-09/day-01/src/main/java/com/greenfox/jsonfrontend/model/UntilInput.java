@@ -6,7 +6,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class UntilInput {
-  int until;
+  Integer until;
 
   public UntilInput() {
   }

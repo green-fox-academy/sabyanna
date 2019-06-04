@@ -5,6 +5,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import static com.sun.org.apache.xalan.internal.xsltc.compiler.sym.error;
+
 @RestController
 public class RestControllers {
 
@@ -30,13 +32,30 @@ public class RestControllers {
     }
   }
 
+
+
+  @GetMapping("/appenda/{appendable}")
+  public ResponseEntity<?> appending(@PathVariable("appendable") String append) {
+    if (!(append == null) && !(append.equals(""))) {
+      return new ResponseEntity<>(new Appender(append), HttpStatus.OK);
+    }
+    return new ResponseEntity<>("not found", HttpStatus.NOT_FOUND);
+  }
+
+   /*
+
+
+
   @GetMapping("/appenda/{appendable}")
   public Object appending(@PathVariable("appendable") String append) {
     if (!(append == null) && !(append.equals(""))) {
       return new Appender(append);
     } return "404";
   }
-  /*
+
+    */
+
+
 
   @GetMapping("/dountil/{action}")
   public Object doUntil(@PathVariable("action") String operation, @RequestParam(required = false) int until) {
@@ -45,14 +64,18 @@ public class RestControllers {
     } return "404";
   }
 
-   */
+
 
   @PostMapping("/dountil/{action}")
   public ResponseEntity<?> doUntil(@PathVariable("action") String operation, @RequestBody UntilInput untilInput) {
-    if (untilInput != null) {
-      return new ResponseEntity<DoUntil>(new DoUntil(operation, untilInput.getUntil()), HttpStatus.OK);
-    } return new ResponseEntity<ErrorResponse>(new ErrorResponse(4), HttpStatus.BAD_REQUEST);
+    if ((untilInput.getUntil() != null) && (untilInput.getUntil() != 0)) {
+      return new ResponseEntity<>(new DoUntil(operation, untilInput.getUntil()), HttpStatus.OK);
+    } else {
+      return new ResponseEntity<>("Please provide a number!", HttpStatus.BAD_REQUEST);
+    }
   }
+
+  /*
 
   @PostMapping("/arrays")
   public ResponseEntity<?> handleArrays(@RequestBody ArrayInput arrayInput) {
@@ -60,6 +83,31 @@ public class RestControllers {
       return new ResponseEntity<HandleArray>(new HandleArray(arrayInput.getWhat(), arrayInput.getNumbers()), HttpStatus.OK);
     } return new ResponseEntity<ErrorResponse>(new ErrorResponse(4), HttpStatus.BAD_REQUEST);
   }
+
+   */
+
+
+  @PostMapping("/arrays")
+  public ResponseEntity<?> handleArrays(@RequestBody ArrayInput arrayInput) {
+    if ((arrayInput.getWhat() != null)&&(arrayInput.getNumbers() != null)) {
+      return new ResponseEntity<HandleArray>(new HandleArray(arrayInput.getWhat(), arrayInput.getNumbers()), HttpStatus.OK);
+    } return new ResponseEntity<>("Please provide what to do with the numbers!", HttpStatus.BAD_REQUEST);
+  }
+
+
+  /*
+
+  @GetMapping("/manual")
+  void manual(HttpServletResponse response) throws IOException {
+    response.setHeader("Custom-Header", "foo");
+    response.setStatus(200);
+    response.getWriter().println("Hello World!");
+  }
+
+  ResponseEntity.status((HttpStatus.BAD_REQUEST)).body(errorService.showError("enter number"));
+
+
+   */
 
 
 
