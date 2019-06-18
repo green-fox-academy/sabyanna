@@ -6,15 +6,23 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Arrow {
-  private Double distance;
-  private Double time;
-  private Double speed;
+  private Float distance;
+  private Float time;
+  private Float speed;
 
-  public Arrow(Double distance, Double time) {
+  public Arrow(Float distance, Float time) {
     this.distance = distance;
     this.time = time;
     speed = distance / time;
   }
+
+  /*
+   public Arrow(String distanceString, String timeString) {
+    distance = Double.parseDouble(distanceString);
+    time = Double.parseDouble(timeString);
+    speed = distance / time;
+  }
+   */
 
   public Arrow() {
   }

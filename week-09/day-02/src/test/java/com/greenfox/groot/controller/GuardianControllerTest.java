@@ -28,11 +28,31 @@ public class GuardianControllerTest {
             .andExpect(jsonPath("translated", is("I am Groot!")));
   }
 
-
   @Test
   public void myMessReturnWhenMessageNotGiven() throws Exception{
     mockMvc.perform(get("/groot"))
             .andExpect(status().isBadRequest())
             .andExpect(content().string("Please provide what to do with the numbers!"));
+  }
+
+  @Test
+  public void ArrowReturnWhenParametersCorrectlyGiven() throws Exception{
+    mockMvc.perform(get("/yondu/?distance=100.0&time=10.0"))
+            .andExpect(status().isOk())
+            .andExpect(jsonPath("speed", is(10.0)));
+  }
+
+  @Test
+  public void ArrowReturnWhenTimeIsNull() throws Exception{
+    mockMvc.perform(get("/yondu/?distance=100.0&time=0"))
+            .andExpect(status().isBadRequest())
+            .andExpect(content().string("time cannot be 0"));
+  }
+
+  @Test
+  public void ArrowReturnWhenParametersNotGiven() throws Exception{
+    mockMvc.perform(get("/yondu"))
+            .andExpect(status().isBadRequest())
+            .andExpect(content().string("please give the parameters correctly"));
   }
 }

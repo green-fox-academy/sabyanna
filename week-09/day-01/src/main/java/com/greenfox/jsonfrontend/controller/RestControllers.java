@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 import static com.sun.org.apache.xalan.internal.xsltc.compiler.sym.error;
 
-@RestController
+
 public class RestControllers {
 
   @GetMapping("/doubling")

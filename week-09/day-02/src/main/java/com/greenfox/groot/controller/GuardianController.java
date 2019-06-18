@@ -21,10 +21,11 @@ public class GuardianController {
   }
 
   @GetMapping("/yondu")
-  public ResponseEntity<?> yonduAPI(Double distance, Double time) {
-    if (((distance != null) || (time != null)) && time != 0) {
+  public ResponseEntity<?> yonduAPI( Float distance, Float time) {
+    if ((distance != null) && (time != null) && time != 0) {
       return new ResponseEntity<>(new Arrow(distance, time), HttpStatus.OK);
-    } else if (((distance != null) || (time != null)) && time == 0) {
+    } else if ((distance != null) && (time != null) && time == 0) {
+
       return new ResponseEntity<>("time cannot be 0", HttpStatus.BAD_REQUEST);
     }
     return new ResponseEntity<>("please give the parameters correctly", HttpStatus.BAD_REQUEST);
