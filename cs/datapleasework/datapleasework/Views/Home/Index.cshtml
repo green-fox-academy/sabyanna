@@ -1,0 +1,52 @@
+﻿@model  List<datapleasework.Models.Todo>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    @*<link rel="stylesheet" href="styles.css" type="text/css" />*@
+    <title></title>
+    
+</head>
+<body class="container">
+    <h1>Todos for today</h1>
+    <form action="/Add">
+        <button type="submit">Add new todo</button>
+    </form>
+    <form action="/Assignees">
+        <button type="submit">Assignees</button>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Is Urgent</th>
+                <th>IsDone</th>
+                <th>Assignee</th>
+                <th>Edit</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            @foreach (var todo in Model)
+            {
+                <tr>
+                    <td>@todo.Id</td>
+                    <td>@todo.Title</td>
+                    <td>@todo.IsUrgent</td>
+                    <td>@todo.IsDone</td>
+                    <td>@todo.Assignee</td>
+                    <td>
+                        <form action="/Home/EditTodo?id=@todo.Id" method="post">
+                            <button>Edit</button>
+                        </form>
+                    </td>
+
+                </tr>
+            }
+
+        </tbody>
+    </table>
+
+</body>
+</html>

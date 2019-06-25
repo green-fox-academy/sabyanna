@@ -1,0 +1,36 @@
+﻿
+
+@model Assignee
+@using datapleasework.Models
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    
+    <title>Edit Assignee</title>
+
+</head>
+<body class="container">
+    <h2>Edit assignee: @Model.AssigneeName</h2>
+    <form action="EditedAssigne/?id=@Model.AssId" method="post">
+        <div class="form-group">
+            <label for="Name">Title</label>
+            <input type="text" name="Name" value="@Model.AssigneeName" class="form-controll" />
+        </div>        
+
+        <button type="submit">Update</button>
+
+
+
+
+        @*
+            <div><label for="title">Urgency</label></div>
+            <div><input name="IsUrgent" type="checkbox" /></div>
+
+            <div> <label for="active">Active</label></div>
+            <div><input name="IsDone" type="checkbox" /></div>*@
+
+
+    </form>
+</body>
+</html>

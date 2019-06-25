@@ -1,0 +1,14 @@
+C:\Users\User\greenfox\sabyanna\cs\TrickTracker.BackService\TrickTracker.BackService\obj\Debug\netcoreapp2.1\TrickTracker.BackService.csprojAssemblyReference.cache
+C:\Users\User\greenfox\sabyanna\cs\TrickTracker.BackService\TrickTracker.BackService\obj\Debug\netcoreapp2.1\TrickTracker.BackService.csproj.CoreCompileInputs.cache
+C:\Users\User\greenfox\sabyanna\cs\TrickTracker.BackService\TrickTracker.BackService\obj\Debug\netcoreapp2.1\TrickTracker.BackService.RazorAssemblyInfo.cache
+C:\Users\User\greenfox\sabyanna\cs\TrickTracker.BackService\TrickTracker.BackService\obj\Debug\netcoreapp2.1\TrickTracker.BackService.RazorAssemblyInfo.cs
+C:\Users\User\greenfox\sabyanna\cs\TrickTracker.BackService\TrickTracker.BackService\obj\Debug\netcoreapp2.1\TrickTracker.BackService.AssemblyInfoInputs.cache
+C:\Users\User\greenfox\sabyanna\cs\TrickTracker.BackService\TrickTracker.BackService\obj\Debug\netcoreapp2.1\TrickTracker.BackService.AssemblyInfo.cs
+C:\Users\User\greenfox\sabyanna\cs\TrickTracker.BackService\TrickTracker.BackService\bin\Debug\netcoreapp2.1\TrickTracker.BackService.deps.json
+C:\Users\User\greenfox\sabyanna\cs\TrickTracker.BackService\TrickTracker.BackService\bin\Debug\netcoreapp2.1\TrickTracker.BackService.runtimeconfig.json
+C:\Users\User\greenfox\sabyanna\cs\TrickTracker.BackService\TrickTracker.BackService\bin\Debug\netcoreapp2.1\TrickTracker.BackService.runtimeconfig.dev.json
+C:\Users\User\greenfox\sabyanna\cs\TrickTracker.BackService\TrickTracker.BackService\bin\Debug\netcoreapp2.1\TrickTracker.BackService.dll
+C:\Users\User\greenfox\sabyanna\cs\TrickTracker.BackService\TrickTracker.BackService\bin\Debug\netcoreapp2.1\TrickTracker.BackService.pdb
+C:\Users\User\greenfox\sabyanna\cs\TrickTracker.BackService\TrickTracker.BackService\obj\Debug\netcoreapp2.1\TrickTracker.BackService.RazorTargetAssemblyInfo.cache
+C:\Users\User\greenfox\sabyanna\cs\TrickTracker.BackService\TrickTracker.BackService\obj\Debug\netcoreapp2.1\TrickTracker.BackService.dll
+C:\Users\User\greenfox\sabyanna\cs\TrickTracker.BackService\TrickTracker.BackService\obj\Debug\netcoreapp2.1\TrickTracker.BackService.pdb

@@ -1,0 +1,47 @@
+﻿@model List<datapleasework.Models.Assignee>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Assignees</title>
+
+</head>
+<body class="container">
+    <h1>Assignees</h1>
+    <form action="/AddAssignee">
+        <button type="submit">Add new assignee</button>
+    </form>
+    <form action="/">
+        <button type="submit">Todos</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Edit</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            @foreach (var assignee in Model)
+            {
+                <tr>
+                    <td>@assignee.AssId</td>
+                    <td>@assignee.AssigneeName</td>
+
+                    <td>
+                        <form action="/EditAssignee?id=@assignee.AssId" method="post">
+                            <button>Edit</button>
+                        </form>
+                    </td>
+
+                </tr>
+            }
+
+        </tbody>
+    </table>
+
+</body>
+</html>

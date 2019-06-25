@@ -1,0 +1,28 @@
+﻿@model List<datapleasework.Models.Todo>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    @*<link rel="stylesheet" href="styles.css" type="text/css" />*@
+    <title></title>
+
+</head>
+<body class="container">
+    <h2>Add new Todo</h2>
+    <form action="/Add" method="post">
+        @*<label for="id">Id</label>
+        <input name="Id" type="text" />*@
+
+        <div><label for="title">Title</label></div>
+        <div><input name="Title" type="text" /></div>
+
+        @*<div><label for="title">Urgency</label></div>
+        <div><input name="IsUrgent" type="checkbox" /></div>
+
+        <div> <label for="active">Active</label></div>
+        <div><input name="IsDone" type="checkbox" /></div>*@
+
+        <div><button type="submit" value="submit">Submit</button></div>
+    </form>
+</body>
+</html>

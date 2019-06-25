@@ -1,0 +1,14 @@
+C:\Users\User\greenfox\sabyanna\cs\datatbaseTry\datatbaseTry\bin\Debug\netcoreapp2.1\datatbaseTry.deps.json
+C:\Users\User\greenfox\sabyanna\cs\datatbaseTry\datatbaseTry\bin\Debug\netcoreapp2.1\datatbaseTry.runtimeconfig.json
+C:\Users\User\greenfox\sabyanna\cs\datatbaseTry\datatbaseTry\bin\Debug\netcoreapp2.1\datatbaseTry.runtimeconfig.dev.json
+C:\Users\User\greenfox\sabyanna\cs\datatbaseTry\datatbaseTry\bin\Debug\netcoreapp2.1\datatbaseTry.dll
+C:\Users\User\greenfox\sabyanna\cs\datatbaseTry\datatbaseTry\bin\Debug\netcoreapp2.1\datatbaseTry.pdb
+C:\Users\User\greenfox\sabyanna\cs\datatbaseTry\datatbaseTry\obj\Debug\netcoreapp2.1\datatbaseTry.csprojAssemblyReference.cache
+C:\Users\User\greenfox\sabyanna\cs\datatbaseTry\datatbaseTry\obj\Debug\netcoreapp2.1\datatbaseTry.csproj.CoreCompileInputs.cache
+C:\Users\User\greenfox\sabyanna\cs\datatbaseTry\datatbaseTry\obj\Debug\netcoreapp2.1\datatbaseTry.RazorAssemblyInfo.cache
+C:\Users\User\greenfox\sabyanna\cs\datatbaseTry\datatbaseTry\obj\Debug\netcoreapp2.1\datatbaseTry.RazorAssemblyInfo.cs
+C:\Users\User\greenfox\sabyanna\cs\datatbaseTry\datatbaseTry\obj\Debug\netcoreapp2.1\datatbaseTry.AssemblyInfoInputs.cache
+C:\Users\User\greenfox\sabyanna\cs\datatbaseTry\datatbaseTry\obj\Debug\netcoreapp2.1\datatbaseTry.AssemblyInfo.cs
+C:\Users\User\greenfox\sabyanna\cs\datatbaseTry\datatbaseTry\obj\Debug\netcoreapp2.1\datatbaseTry.RazorTargetAssemblyInfo.cache
+C:\Users\User\greenfox\sabyanna\cs\datatbaseTry\datatbaseTry\obj\Debug\netcoreapp2.1\datatbaseTry.dll
+C:\Users\User\greenfox\sabyanna\cs\datatbaseTry\datatbaseTry\obj\Debug\netcoreapp2.1\datatbaseTry.pdb

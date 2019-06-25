@@ -1,0 +1,6 @@
+C:\Users\User\greenfox\sabyanna\cs\MockTestApp\MockTestApp\obj\Debug\netcoreapp2.1\MockTestApp.csprojAssemblyReference.cache
+C:\Users\User\greenfox\sabyanna\cs\MockTestApp\MockTestApp\obj\Debug\netcoreapp2.1\MockTestApp.csproj.CoreCompileInputs.cache
+C:\Users\User\greenfox\sabyanna\cs\MockTestApp\MockTestApp\obj\Debug\netcoreapp2.1\MockTestApp.RazorAssemblyInfo.cache
+C:\Users\User\greenfox\sabyanna\cs\MockTestApp\MockTestApp\obj\Debug\netcoreapp2.1\MockTestApp.RazorAssemblyInfo.cs
+C:\Users\User\greenfox\sabyanna\cs\MockTestApp\MockTestApp\obj\Debug\netcoreapp2.1\MockTestApp.AssemblyInfoInputs.cache
+C:\Users\User\greenfox\sabyanna\cs\MockTestApp\MockTestApp\obj\Debug\netcoreapp2.1\MockTestApp.AssemblyInfo.cs
